@@ -3,6 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Nutricion</title>
+    <style>
+        .boton{
+            border: 2px solid black;
+            background: #96ffcc;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            color: black;
+
+        }
+        div.A{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 200px;
+
+        }
+        img{
+            width: 50%;
+            height: 50%;
+
+        }
+        p.centrado{
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
 <header>
@@ -10,6 +37,80 @@
         <img src="Imagenes/logo.png" alt="Gimnasio SportCompostela">
     </a>
     <h1>NUTRICIÓN</h1>
+
 </header>
+<main>
+    <div>
+        <a href="#Seguimiento" class="boton"> SEGUIMIENTO </a>
+    </div>
+    <div>
+        <a href="#EntrevistaPersonal" class="boton"> ENTREVISTA PERSONAL </a>
+    </div>
+    <div>
+        <a href="#GeneracionMenus" class="boton"> GENERACIÓN DE MENÚS </a>
+    </div>
+    <div>
+        <a href="#NutricionDeportiva" class="boton"> NUTRICIÓN DEPORTIVA </a>
+    </div>
+
+    <section id="Seguimiento">
+        <h2>SEGUIMIENTO</h2>
+        <div class="A" >
+            <p class="centrado" style="font-weight: bold; border-bottom: 2px solid black;
+            padding-bottom: 10px"> SEGUIMIENTO MENSUAL</p>
+            <p class="centrado"> Cita mensual con nuestro nutricionista (Incluye
+                entrevista persona y generación de menús) </p>
+            <p class="centrado" style="border-top: 2px solid black;
+            padding-top: 10px"> <strong> PRECIO: </strong> Cuota+8 € mensuales </p>
+
+        </div>
+        <div class="A" >
+            <p class="centrado" style="font-weight: bold; border-bottom: 2px solid black;
+            padding-bottom: 10px"> SEGUIMIENTO SEMANAL</p>
+            <p class="centrado"> Cita semanal con nuestro nutricionista (Incluye
+                entrevista persona y generación de menús) </p>
+            <p class="centrado" style="border-top: 2px solid black;
+            padding-top: 10px"> <strong> PRECIO: </strong> Cuota+12 € mensuales </p>
+
+        </div>
+
+
+    </section>
+    <section id="EntrevistaPersonal">
+        <h2>ENTREVISTA PERSONAL</h2>
+
+        <div style="text-align: center">
+            <img class="movibles" src="Imagenes/Nutricionista.jpg" alt="Nutricionista">
+
+        </div>
+
+        <h3>Entrevista inicial</h3>
+        <p>
+            Llevarás a cabo una entrevista inicial con nuestra nutricionista. El objetivo
+            principal de esta fase es conocer la situación del cliente, que expondrá
+            su caso particular y qué es lo que quiere lograr. De este modo, se adaptará
+            la dieta a las circunstacias del cliente, teniendo en cuenta aspectos como
+            el número de comidas al día que puede realizar, enfermedades que padezca
+            (intolerancia, alergias etc) o gustos alimentarios. Además, se te realizarán distintas
+            pruebas como el pesaje, medición del IMC (Índice de masa corporal) o
+            porcentaje de grasa corporal.
+
+            La finalidad principal es conocer tu situación lo mejor posible para proporcionar
+            una dieta que no solo ayude a lograr tu objetivo, si no que genere unos buenos
+            hábitos y disfrutes del proceso. 
+
+
+        </p>
+
+    </section>
+    <section id="GeneracionMenus">
+        <h2>GENERACIÓN DE MENÚS</h2>
+
+    </section>
+    <section id="NutricionDeportiva">
+        <h2>NUTRICION DEPORTIVA</h2>
+
+    </section>
+</main>
 </body>
 </html>
