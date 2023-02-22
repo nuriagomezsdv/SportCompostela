@@ -28,7 +28,36 @@
         p.centrado{
             text-align: center;
         }
+        .menu{
+            width: 100%;
+            margin:0;
+            padding:0;
+            box-sizing:border-box;font-size:0;
+        }
 
+        nav a{
+            text-decoration: none;
+            font-weight: bold;
+            color:inherit;
+            font-size:14px;
+        }
+        nav li{
+            float: left;
+            display:flex;
+            width: 130px;
+            height: 50px;
+            padding:5px 10px;
+            background-color:black;
+            border:1px solid #000;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        nav li:hover{
+            background-color: #ecfbf3;
+            font-weight: bold;
+            color:black;
+        }
 
 
     </style>
@@ -38,18 +67,31 @@
     <a href="sportCompostela.html">
         <img src="Imagenes/logo.png" alt="Gimnasio SportCompostela">
     </a>
-    <h1>FITNESS</h1>
+    <nav>
+        <ul class="menu">
+            <a href="sportCompostela.html"> <li style="background-color: #ecfbf3"> <img src="Imagenes/logo.jpeg" alt="Gimnasio SportCompostela"
+                                                                                        style="object-fit: contain; width: 100%; height: 100%">
+            </li></a>
+            <a href="fitness.html"> <li style="background-color: #ecfbf3; color: black"> FITNESS </li> </a>
+            <a href="nutricion.html"> <li>NURTRICIÓN </li> </a>
+            <a href="personal.html"> <li>PERSONAL</li></a>
+            <a href="blog.html"><li> BLOG </li></a>
+            <a href="fitness.html/#cuotas"><li>CUOTAS</li></a>
+            <a href="contacto.html"><li>CONTACTO</li></a>
+        </ul>
+    </nav>
 </header>
 <main>
-    <div>
-        <a href="#instalaciones" class="boton"> INSTALACIONES </a>
-    </div>
-    <div>
-        <a href="#actividades" class="boton"> ACTIVIDADES </a>
-    </div>
-    <div>
-        <a href="#entrenamientoPersonalizado" class="boton"> ENTRENAMIENTO PERSONALIZADO </a>
-    </div>
+        <div>
+            <a href="#instalaciones" class="boton"> INSTALACIONES </a>
+        </div>
+        <div>
+            <a href="#actividades" class="boton"> ACTIVIDADES </a>
+        </div>
+        <div>
+            <a href="#entrenamientoPersonalizado" class="boton"> ENTRENAMIENTO PERSONALIZADO </a>
+        </div>
+
 
 
     <section id="instalaciones">
@@ -213,7 +255,7 @@
         </div>
         <div class="A" >
             <p class="centrado" style="font-weight: bold; border-bottom: 2px solid black;
-            padding-bottom: 10px"> CUOTA FAMILIARL</p>
+            padding-bottom: 10px"> CUOTA FAMILIAR</p>
             <p class="centrado"> Hasta 4 miembros de una unidad familiar </p>
             <p class="centrado" style="border-top: 2px solid black;
             padding-top: 10px"> <strong> PRECIO: </strong> 55 € </p>
