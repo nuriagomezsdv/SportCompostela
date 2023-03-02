@@ -1,0 +1,41 @@
+body {
+    font-family: Serif;
+    color: black;
+    margin: 0;
+    background-color: white }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    background-color: black;
+
+ }
+
+nav a{
+    text-decoration: none;
+    color:inherit;
+}
+nav li{
+    float: left;
+    display:flex;
+    width: 130px;
+    height: 50px;
+    padding:5px 10px;
+    background-color:black;
+    border:1px solid #000;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav li:hover{
+    /*background-color: #ecfbf3;*/
+    font-weight: bold;
+    /*color:black;*/
+    font-size: 30px;
+}
