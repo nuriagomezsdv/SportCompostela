@@ -1,4 +1,10 @@
 @import "general.css";
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
 .inicio{
     position: relative;
     display: inline-block;
@@ -10,10 +16,10 @@
     /*top: 10px;
     left: 10px;*/
     color: white;
-    font-size: 45px;
+    font-size: 65px;
     font-weight: bold;
     font-family: arial;
-    top: 50%;
+    top: 30%;
     left: 40%;
     transform: translate(-50%, -50%);
 
