@@ -4,37 +4,60 @@ html{
     color: white;
     margin: 0
 }
-.menu {
+.menuPrueba{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
     padding:0;
-    box-sizing:border-box;
- }
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
 
-
-
-nav a{
+.menuLista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
     text-decoration: none;
     color:inherit;
 }
-nav li{
-    float: left;
-    display:flex;
+
+.menuItem{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 130px;
     height: 50px;
     padding:5px 10px;
-    background-color:black;
     border:1px solid #000;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
 }
+
+.refMenu{
+    text-decoration: none;
+    color:inherit;
+}
+
+@media screen and (min-width: 1590px){
+    .menuItem{
+        margin: 0 calc(20px + 1vw);
+    }
+}
+
+@media screen and (max-width: 1157px){
+    .menuLista{
+        flex-wrap: wrap;
+    }
+}
+
 nav li:hover{
-    /*background-color: #ecfbf3;*/
     font-weight: bold;
-    /*color:black;*/
     font-size: 30px;
 }
