@@ -4,7 +4,12 @@ html{
     color: white;
     margin: 0
 }
-
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
 /*Menus de nav*/
 
 .menu{
