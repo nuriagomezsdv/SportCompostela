@@ -96,13 +96,25 @@ html{
     .menuItem{
         margin: 0 calc(20px + 1vw);
     }
+    .subMenuItem{
+        margin: 0 calc(20px + 1vw);
+
+    }
 }
 
 @media screen and (max-width: 1157px){
     .menuLista{
         flex-wrap: wrap;
     }
+    .subMenuLista{
+        flex-wrap: wrap;
+    }
+    .subMenuItem{
+        margin: 20px;
+    }
 }
+
+
 
 .menuItem:hover{
     font-weight: bold;
