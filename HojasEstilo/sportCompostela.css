@@ -7,16 +7,15 @@
 }
 
 .textoInicio{
-    position: absolute;
-    /*top: 10px;
-    left: 10px;*/
+    position: absolute; /*posicion abosluta con respecto al contenedor*/
     color: white;
-    font-size: calc(3rem + 1vw);
     font-weight: bold;
     font-family: Arial;
     letter-spacing: -2px;
+    line-height: 1.5;
+    font-size: calc(1rem + 2vw);
     top: 30%;
-    left: 25%;
+    left: 45%;
     transform: translate(-50%, -50%);
 }
 
