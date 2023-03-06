@@ -1,0 +1,158 @@
+html{
+    background-color: black;
+    font-family: Serif;
+    color: white;
+    margin: 0
+}
+
+/*Menus de nav*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding:0;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.subMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding:0;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+/*Ul de los nav*/
+
+.menuLista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    color:inherit;
+}
+
+.subMenuLista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    color:inherit;
+}
+
+/*Li de los nav*/
+
+.menuItem{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    padding:5px 10px;
+    border:1px solid #000;
+}
+
+.subMenuItem{
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    padding:5px 65px;
+    border: 3px solid white;
+}
+
+
+
+.refMenu{
+    text-decoration: none;
+    color:inherit;
+}
+
+@media screen and (min-width: 1590px){
+    .menuItem{
+        margin: 0 calc(20px + 1vw);
+    }
+    .subMenuItem{
+        margin: 0 calc(20px + 1vw);
+
+    }
+}
+
+@media screen and (max-width: 1157px){
+    .menuLista{
+        flex-wrap: wrap;
+    }
+    .subMenuLista{
+        flex-wrap: wrap;
+    }
+    .subMenuItem{
+        margin: 20px;
+    }
+}
+
+
+
+.menuItem:hover{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.subMenuItem:hover{
+    background: #019853;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+/*Diseño a dos columnas del contenido de la pagina web*/
+
+.Gtexto_Imagen{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px;
+    grid-gap: 20px;
+}
+.GTexto{
+    grid-column: 1;
+    grid-row: 1;
+
+}
+.Imagen{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.Imagen_GTexto{
+
+}
+.PTexto_Imagen{
+
+}
+.Imagen_PTexto{
+
+}
+
+

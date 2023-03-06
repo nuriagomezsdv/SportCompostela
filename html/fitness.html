@@ -3,126 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Fitness</title>
-    <style>
-        div.A{
-            border: 2px solid black;
-            border-radius: 10px;
-            width: 200px;
 
-        }
-        .boton{
-            border: 2px solid black;
-            background: #96ffcc;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-            color: black;
+    <link rel="stylesheet" href="../HojasEstilo/fitness.css">
 
-        }
-        img.movibles{
-            width: 50%;
-            height: 50%;
-
-        }
-        p.centrado{
-            text-align: center;
-        }
-        .menu{
-            width: 100%;
-            margin:0;
-            padding:0;
-            box-sizing:border-box;font-size:0;
-        }
-
-        nav a{
-            text-decoration: none;
-            font-weight: bold;
-            color:inherit;
-            font-size:14px;
-        }
-        nav li{
-            float: left;
-            display:flex;
-            width: 130px;
-            height: 50px;
-            padding:5px 10px;
-            background-color:black;
-            border:1px solid #000;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
-        nav li:hover{
-            background-color: #ecfbf3;
-            font-weight: bold;
-            color:black;
-        }
-
-
-    </style>
 </head>
 <body>
 <header>
-    <a href="sportCompostela.html">
-        <img src="Imagenes/logo.png" alt="Gimnasio SportCompostela">
+    <a href="index.html" class="logo">
+        <img src="../Imagenes/logo.png" alt="Gimnasio SportCompostela"width=20% height=20%>
     </a>
-    <nav>
-        <ul class="menu">
-            <a href="sportCompostela.html"> <li style="background-color: #ecfbf3"> <img src="Imagenes/logo.jpeg" alt="Gimnasio SportCompostela"
-                                                                                        style="object-fit: contain; width: 100%; height: 100%">
-            </li></a>
-            <a href="fitness.html"> <li style="background-color: #ecfbf3; color: black"> FITNESS </li> </a>
-            <a href="nutricion.html"> <li>NURTRICIÓN </li> </a>
-            <a href="personal.html"> <li>PERSONAL</li></a>
-            <a href="blog.html"><li> BLOG </li></a>
-            <a href="fitness.html/#cuotas"><li>CUOTAS</li></a>
-            <a href="contacto.html"><li>CONTACTO</li></a>
-        </ul>
-    </nav>
+
+
+
 </header>
+
+<nav>
+    <div class="menu">
+        <ul class="menuLista">
+            <li class="menuItem" style="color: #019853; font-size: 30px"> <a class="refMenu" href="fitness.html"> FITNESS </a> </li>
+            <li class="menuItem"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a> </li>
+            <li class="menuItem"><a class="refMenu" href="personal.html"> PERSONAL</a></li>
+            <li class="menuItem"><a class="refMenu" href="blog.html"> BLOG</a></li>
+            <li class="menuItem"><a class="refMenu" href="cuotas.html"> CUOTAS</a></li>
+            <li class="menuItem"><a class="refMenu" href="contacto.html"> CONTACTO</a> </li>
+        </ul>
+    </div>
+</nav>
+<nav>
+    <div class="subMenu">
+        <ul class="subMenuLista">
+            <li class="subMenuItem"> <a class="refMenu" href="#instalaciones"> INSTALACIONES </a> </li>
+            <li class="subMenuItem"><a class="refMenu" href="#actividades"> ACTIVIDADES </a> </li>
+            <li class="subMenuItem"><a class="refMenu" href="#entrenamientoPersonalizado"> ENTRENAMIENTO PERSONALIZADO</a></li>
+
+        </ul>
+    </div>
+</nav>
 <main>
-        <div>
-            <a href="#instalaciones" class="boton"> INSTALACIONES </a>
-        </div>
-        <div>
-            <a href="#actividades" class="boton"> ACTIVIDADES </a>
-        </div>
-        <div>
-            <a href="#entrenamientoPersonalizado" class="boton"> ENTRENAMIENTO PERSONALIZADO </a>
-        </div>
 
 
 
     <section id="instalaciones">
         <h2>INSTALACIONES</h2>
-        <p class="centrado">
+        <div class="Gtexto_Imagen">
+            <p class="GTexto">
 
-            Disfruta de las mejores instalaciones disponibles en nuestro gimnasio, con equipamiento
-            de última generación, incluyendo amplios espacios y salas para la práctica deportiva.
+                Disfruta de las mejores instalaciones disponibles en nuestro gimnasio, con equipamiento
+                de última generación, incluyendo amplios espacios y salas para la práctica deportiva.
 
-        </p>
+            </p>
 
-        <div style="text-align: center">
-            <img class="movibles" src="Imagenes/salaMaquinas.jpg" alt="Sala de maquinas funcionales">
-
-            <br>
-            <strong> Sala de máquinas funcionales </strong>
+            <img class="Imagen" src="../Imagenes/salaMaquinas.jpg" alt="Sala de maquinas funcionales">
         </div>
-        <div style="text-align: center">
-            <img class="movibles" src="Imagenes/PesoLibreCrossfit.png" alt="Sala de peso libre y crossfit">
+        <div class="Gtexto_Imagen">
+            <p class="GTexto"> EHEHEhehhehehee</p>
+            <img class="Imagen" src="../Imagenes/PesoLibreCrossfit.png" alt="Sala de peso libre y crossfit">
+        </div>
+
+
+
+
 
             <br>
             <strong> Sala de peso libre y crossfit </strong>
-        </div>
+
         <div style="text-align: center">
-            <img class="movibles" src="Imagenes/ZonaActividades.png" alt="Sala de actividades">
+            <img class="movibles" src="../Imagenes/ZonaActividades.png" alt="Sala de actividades">
 
             <br>
             <strong> Sala de actividades </strong>
         </div>
         <div style="text-align: center">
-            <img class="movibles" src="Imagenes/Piscina.webp" alt="Piscina">
+            <img class="movibles" src="../Imagenes/Piscina.webp" alt="Piscina">
 
             <br>
             <strong> Piscina </strong>
@@ -141,7 +93,7 @@
         </p>
 
         <div style="text-align: center">
-            <img class="movibles" src="Imagenes/Funcional.jpeg" alt="Funcional">
+            <img class="movibles" src="../Imagenes/Funcional.jpeg" alt="Funcional">
             <br>
             <strong> Funcional </strong>
             <br>
@@ -152,7 +104,7 @@
 
         </div>
         <div style="text-align: center">
-            <img class="movibles" src="Imagenes/Yoga.jpeg" alt="Yoga" >
+            <img class="movibles" src="../Imagenes/Yoga.jpeg" alt="Yoga" >
             <br>
             <strong> Yoga </strong>
             <br>
@@ -163,7 +115,7 @@
             </p>
         </div>
         <div style="text-align: center">
-            <img class="movibles" src="Imagenes/bodyCombat.webp" alt="BodyCombat" >
+            <img class="movibles" src="../Imagenes/bodyCombat.webp" alt="BodyCombat" >
             <br>
             <strong> BodyCombat </strong>
             <br>
@@ -174,7 +126,7 @@
             </p>
         </div>
         <div style="text-align: center">
-            <img class="movibles" src="Imagenes/Spinning.webp" alt="Spinning" >
+            <img class="movibles" src="../Imagenes/Spinning.webp" alt="Spinning" >
             <br>
             <strong> Spinning </strong>
             <br>
@@ -186,7 +138,7 @@
             </p>
         </div>
         <div style="text-align: center">
-            <img class="movibles" src="Imagenes/AquaGym.jpg" alt="Aquagym" >
+            <img class="movibles" src="../Imagenes/AquaGym.jpg" alt="Aquagym" >
             <br>
             <strong> AquaGym </strong>
             <br>
