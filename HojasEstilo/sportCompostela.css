@@ -1,5 +1,6 @@
 @import "general.css";
 
+
 .inicio{
     position: relative;
     display: inline-block;
@@ -10,7 +11,7 @@
     position: absolute; /*posicion abosluta con respecto al contenedor*/
     color: white;
     font-weight: bold;
-    font-family: Arial;
+    font-family: Protomolecule;
     letter-spacing: -2px;
     line-height: 1.5;
     font-size: calc(1rem + 2vw);

@@ -1,7 +1,14 @@
+@font-face {
+    font-family: Protomolecule;
+    src: url("../Protomolecule-Medium.ttf"); /* Coloca aquí la ruta del archivo de fuente */
+}
+
 html{
-    background-color: black;
+    /*background-color: black;*/
+    background-color: white;
     font-family: Serif;
-    color: white;
+    /*color: white;*/
+    color: black;
     margin: 0
 }
 .logo{
@@ -10,6 +17,7 @@ html{
     justify-content: center;
     background-color: black;
 }
+
 /*Menus de nav*/
 
 .menu{
@@ -19,8 +27,9 @@ html{
     padding:0;
     justify-content: center;
     margin: 0 auto;
-    max-width: 800px;
     width: 100%;
+    background-color: black;
+    color: white;
 }
 
 .subMenu{
@@ -50,6 +59,7 @@ html{
     list-style: none;
     text-decoration: none;
     color:inherit;
+    background-color: black;
 }
 
 .subMenuLista{
@@ -76,7 +86,8 @@ html{
     width: 130px;
     height: 50px;
     padding:5px 10px;
-    border:1px solid #000;
+    border:1px solid black;
+    font-family: Protomolecule;
 }
 
 .subMenuItem{
@@ -86,8 +97,10 @@ html{
     justify-content: center;
     width: 130px;
     height: 50px;
-    padding:5px 65px;
-    border: 3px solid white;
+    padding:5px 120px;
+    /*background-color: lightgray;*/
+    background-color: #b2d8b2;
+    font-family: Protomolecule;
 }
 
 
@@ -119,6 +132,22 @@ html{
     }
 }
 
+h2{
+    font-weight: bold;
+    font-family: Protomolecule;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+h3{
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+a {
+    white-space: nowrap;
+}
 
 
 .menuItem:hover{
@@ -132,32 +161,81 @@ html{
     font-size: inherit;
 }
 
+/* Boton */
+
+.boton{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding:0px 40px;
+    background-color: #b2d8b2;
+    font-family: Protomolecule;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.boton:hover{
+    background: #019853;
+    font-weight: bold;
+    font-size: inherit;
+}
+
 /*Diseño a dos columnas del contenido de la pagina web*/
 
 .Gtexto_Imagen{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 100px;
+    grid-template-rows: auto;
     grid-gap: 20px;
+    text-align: center;
 }
 .GTexto{
     grid-column: 1;
     grid-row: 1;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 50px;
 
 }
 .Imagen{
     grid-column: 2;
     grid-row: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-family: Protomolecule;
+}
+
+figure img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .Imagen_GTexto{
 
 }
 .PTexto_Imagen{
-
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 500px;
+    grid-gap: 5px;
+    text-align: center;
+    margin: 75px;
 }
 .Imagen_PTexto{
 
 }
-
+#miBoton {
+    /*background-image: flecha.png;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 
