@@ -4,13 +4,41 @@
 }
 
 html{
-    /*background-color: black;*/
     background-color: white;
     font-family: Serif;
-    /*color: white;*/
     color: black;
-    margin: 0
+    margin: 0;
 }
+
+body{
+
+}
+
+h2{
+    font-weight: bold;
+    font-family: Protomolecule;
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 30px;
+    display: flex;
+
+}
+
+h3{
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+a {
+    white-space: nowrap;
+}
+
+
+figure img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -43,7 +71,6 @@ html{
     width: 100%;
     margin-top: 70px;
 }
-
 
 /*Ul de los nav*/
 
@@ -98,63 +125,30 @@ html{
     width: 130px;
     height: 50px;
     padding:5px 120px;
-    /*background-color: lightgray;*/
     background-color: #b2d8b2;
     font-family: Protomolecule;
 }
-
-
 
 .refMenu{
     text-decoration: none;
     color:inherit;
 }
 
-@media screen and (min-width: 1590px){
-    .menuItem{
-        margin: 0 calc(20px + 1vw);
-    }
-    .subMenuItem{
-        margin: 0 calc(20px + 1vw);
-
-    }
-
-}
-
-@media screen and (max-width: 1157px){
-    .menuLista{
-        flex-wrap: wrap;
-    }
-    .subMenuLista{
-        flex-wrap: wrap;
-    }
-    .subMenuItem{
-        margin: 20px;
-    }
-
-}
-
-h2{
-    font-weight: bold;
-    font-family: Protomolecule;
-    padding-left: 40px;
-    padding-top: 30px;
-    font-size: 30px;
-}
-
-h3{
-    font-weight: bold;
-    padding-left: 15px;
-}
-
-a {
-    white-space: nowrap;
-}
-
-
 .menuItem:hover{
     font-weight: bold;
     font-size: 30px;
+}
+
+@media screen and (min-width: 1590px) {
+    .menuItem {
+        margin: 0 calc(20px + 1vw);
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .menuLista {
+        flex-wrap: wrap;
+    }
 }
 
 .subMenuItem:hover{
@@ -186,12 +180,74 @@ a {
     font-size: inherit;
 }
 
+/*Diseño a dos columnas*/
+
+.cuadriculaflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 700px;
+}
+
+.cajaTexto {
+    max-width: 40%;
+    text-align: justify;
+    align-self: center;
+    font-size: 20px;
+    padding-left: 70px;
+}
+
+.cajaImagen{
+    max-width: 40%;
+    align-self: center;
+    text-align: center;
+    font-family: Protomolecule;
+    font-size: 25px;
+    margin-top:0;
+}
+
+@media screen and (max-width: 1100px) {
+    .cuadriculaflex {
+        flex-direction: column;
+    }
+    .cajaTexto{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cuadriculaflex {
+        justify-content: left;
+        align-items: flex-start;
+        align-self: flex-start;
+        align-content: flex-start;
+        min-width: 900px;
+    }
+}
+
+.letraEspecial{
+    font-family: Protomolecule;
+    font-size: 35px;
+}
+
+.colorVerdeResaltado{
+    color: #019853;
+    font-size: 40px
+}
+
+.colorVerde{
+    color: #019853;
+    font-size: 23px;
+}
+
+
 /*Diseño a dos columnas del contenido de la pagina web*/
 
 .PTexto_Imagen{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 450px;
     grid-gap: 250px;
     text-align: center;
     margin: 75px;
@@ -203,8 +259,8 @@ a {
     grid-row: 1;
     font-size: 20px;
     text-align: left;
-    padding-top: 100px;
-    padding-left: 50px;
+    padding-top: 5vw;
+    padding-left: 5vw;
 
 }
 .Imagen{
@@ -215,12 +271,20 @@ a {
     height: 100%;
     font-size: 25px;
     font-family: Protomolecule;
+    padding-top: 2vw;
     max-width: 650px;
 }
 
-figure img {
+.Imagen_Imagen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px;
+    grid-gap: 250px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-left: 0;
     max-width: 100%;
-    max-height: 100%;
 }
 
 .Imagen1{
@@ -232,85 +296,74 @@ figure img {
     font-size: 25px;
     font-family: Protomolecule;
     max-width: 650px;
+    padding-top: 5vw;
+    padding-left: 5vw;
 }
 
-.Imagen2{
-    grid-column: 2;
-    grid-row: 1;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    font-size: 25px;
-    font-family: Protomolecule;
-    max-width: 650px;
+@media screen and (max-width: 1400px){
+    .PTexto_Imagen {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-gap: 1vw;
+        text-align: center;
+    }
+    .Texto{
+        grid-row: 1;
+        grid-column: 1;
+        max-width: 100%;
+        padding-top: 5vw;
+        padding-left: 5vw;
+    }
+    .Imagen{
+        grid-row: 2;
+        grid-column: 1;
+        max-width: 100%;
+        object-fit: scale-down;
+    }
+    .Imagen_Imagen {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1vw;
+        text-align: center;
+    }
+    .Imagen1{
+        grid-row: 1;
+        grid-column: 1;
+        padding-left: 0;
+        padding-top: 0;
+        max-width: 100%;
+        object-fit: scale-down;
+    }
 }
 
-.Imagen_Imagen{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px;
-    grid-gap: 250px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 75px;
-    padding-left: 0;
-    max-width: 100%;
+@media screen and (max-width: 1000px){
+    .PTexto_Imagen {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.3fr;
+        grid-gap: 1vw;
+        text-align: center;
+    }
 }
 
-.bigger {
+@media screen and (max-width: 650px){
+    .PTexto_Imagen {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Imagen_Imagen{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.smaller {
     transform: scale(0.95);
 }
-
-#miBoton {
-    /*background-image: flecha.png;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-
-
-.Menu_Informacion{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 250px;
-    text-align: center;
-    margin: 75px;
-    max-width: fit-content;
-
-}
-
-
-
-
-.InformacionLista{
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-    list-style: none;
-    text-decoration: none;
-    color:inherit;
-}
-
-.InformacionItem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 130px;
-    height: 50px;
-    padding:5px 120px;
-    margin: 40px;
-    background-color: #b2d8b2;
-}
-
 
 
