@@ -9,3 +9,4 @@ function makeOriginalAndNormal(img) {
     img.style.filter = "none";
     img.classList.remove("bigger");
 }
+
