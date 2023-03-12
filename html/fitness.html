@@ -2,9 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Gimnasio SportCompostela/Fitness">
+    <meta name="keywords" content="Salas, Actividades, Entrenamiento personalizado">
+
     <title>Fitness</title>
+
     <link rel="shorcut icon" href="../Imagenes/pesa.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../HojasEstilo/fitness.css">
+    <script src="../scripts/general.js"></script>
 
 </head>
 <body>
@@ -42,48 +48,51 @@
 
     <section id="instalaciones">
         <h2>INSTALACIONES</h2>
-        <div class="Gtexto_Imagen">
-            <p class="GTexto">
-
-                Disfruta de las mejores instalaciones disponibles en nuestro gimnasio, con equipamiento
-                de última generación, incluyendo amplios espacios y salas para la práctica deportiva.
-
+        <div class="PTexto_Imagen">
+            <p class="Texto">
+                <span style="color: #019853; font-size: 30px"> ☆ </span>  <span style="font-family: Protomolecule; font-size: 35px; text-align: left"> LAS <span style="color: #019853; font-size: 40px"> mejores instalaciones </span> <br> PENSADAS PARA TI </span><br> <br>
+                Disfruta de las <span style="color: #019853; font-size: 20px"> mejores instalaciones </span> disponibles en nuestro gimnasio, con <span style="color: #019853; font-size: 20px"> equipamiento
+                de última generación </span>, incluyendo amplios espacios y salas para la práctica deportiva.
             </p>
-
-            <img class="Imagen" src="../Imagenes/salaMaquinas.jpg" alt="Sala de maquinas funcionales">
-        </div>
-        <div class="Gtexto_Imagen">
-            <p class="GTexto"> EHEHEhehhehehee</p>
-            <img class="Imagen" src="../Imagenes/PesoLibreCrossfit.png" alt="Sala de peso libre y crossfit">
+            <figure class="Imagen">
+                <a href="../Imagenes/salaMaquinas.jpg "><img src="../Imagenes/salaMaquinas.jpg "  onload="makeOriginalAndNormal(this)"  onmouseover="makeGrayAndBigger(this)" onmouseout="makeOriginalAndNormal(this)" alt="Sala de maquinas funcionales"></a>
+                <p style="margin-top: 0"> SALA DE MÁQUINAS FUNCIONALES</p>
+            </figure>
         </div>
 
-            <br>
-            <strong> Sala de peso libre y crossfit </strong>
+        <div class="Imagen_Imagen">
+            <figure class="Imagen1">
+                <a href="../Imagenes/PesoLibreCrossfit.png "><img src="../Imagenes/PesoLibreCrossfit.png"  onload="makeOriginalAndNormal(this)"  onmouseover="makeGrayAndBigger(this)" onmouseout="makeOriginalAndNormal(this)" alt="Sala de peso libre y crossfit"></a>
+                <p style="margin-top: 0"> SALA DE PESO LIBRE Y CROSSFIT</p>
+            </figure>
 
-        <div style="text-align: center">
-            <img class="movibles" src="../Imagenes/ZonaActividades.png" alt="Sala de actividades">
-
-            <br>
-            <strong> Sala de actividades </strong>
-        </div>
-        <div style="text-align: center">
-            <img class="movibles" src="../Imagenes/Piscina.webp" alt="Piscina">
-
-            <br>
-            <strong> Piscina </strong>
+            <figure class="Imagen2">
+                <a href="../Imagenes/ZonaActividades.png "><img src="../Imagenes/ZonaActividades.png"  onload="makeOriginalAndNormal(this)"  onmouseover="makeGrayAndBigger(this)" onmouseout="makeOriginalAndNormal(this)" alt="Sala de actividades"></a>
+                <p style="margin-top: 0"> SALA DE ACTIVIDADES</p>
+            </figure>
         </div>
 
+    </section>
 
 
     </section>
     <section id="actividades">
         <h2>ACTIVIDADES</h2>
-        <p class="centrado">
-            <strong> Únete a las múltiples actividades de nuestro centro, trabajando en grupos,
-            de forma que todos compartiréis el mismo objetivo.
-            </strong>>
 
-        </p>
+        <div class="PTexto_Imagen">
+            <p class="Texto">
+                Únete a las múltiples actividades de nuestro centro, trabajando en grupos,
+                de forma que todos compartiréis el mismo objetivo.
+            </p>
+            <figure class="Imagen">
+                <a href="../Imagenes/Funcional.jpeg "><img src="../Imagenes/Funcional.jpeg "  onload="makeOriginalAndNormal(this)"
+                                                           onmouseover="makeGrayAndBigger(this)" onmouseout="makeOriginalAndNormal(this)" alt="Funcional"></a>
+                <p style="margin-top: 0"> El entrenamiento funcional se adapta a los movimiento naturales del cuerpo,
+                    mejora la movilidad corporal, la agilidad y el equilibrio, desarrolla la salud cardiovascular,
+                    corrige la postura y fortalece la masa muscular.</p>
+            </figure>
+        </div>
+
 
         <div style="text-align: center">
             <img class="movibles" src="../Imagenes/Funcional.jpeg" alt="Funcional">
@@ -146,6 +155,16 @@
     </section>
     <section id="entrenamientoPersonalizado">
         <h2>ENTRENAMIENTO PERSONALIZADO</h2>
+
+
+        <div class="Menu_Informacion">
+            <ul class="InformacionLista">
+                <li class="InformacionItem"> SEGUIMIENTO MENSUAL </li>
+                <li class="InformacionItem">SEGUIMIENTO SEMANAL </li>
+
+            </ul>
+        </div>
+
         <div class="A" >
             <p class="centrado" style="font-weight: bold; border-bottom: 2px solid black; padding-bottom: 10px"> SEGUIMIENTO MENSUAL</p>
             <p class="centrado"> Rutina personalizada, explicación de la misma y cita con el
