@@ -186,14 +186,17 @@ a {
 
 /*Diseño a dos columnas del contenido de la pagina web*/
 
-.Gtexto_Imagen{
+.PTexto_Imagen{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px;
+    grid-gap: 250px;
     text-align: center;
+    margin: 75px;
+    max-width: fit-content;
 }
-.GTexto{
+
+.Texto{
     grid-column: 1;
     grid-row: 1;
     font-size: 20px;
@@ -210,6 +213,7 @@ a {
     height: 100%;
     font-size: 25px;
     font-family: Protomolecule;
+    max-width: 650px;
 }
 
 figure img {
@@ -217,20 +221,44 @@ figure img {
     max-height: 100%;
 }
 
-.Imagen_GTexto{
-
+.Imagen1{
+    grid-column: 1;
+    grid-row: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-family: Protomolecule;
+    max-width: 650px;
 }
-.PTexto_Imagen{
+
+.Imagen2{
+    grid-column: 2;
+    grid-row: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-family: Protomolecule;
+    max-width: 650px;
+}
+
+.Imagen_Imagen{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 500px;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px;
+    grid-gap: 250px;
     text-align: center;
-    margin: 75px;
+    margin-left: 100px;
+    margin-right: 75px;
+    padding-left: 0;
+    max-width: 100%;
 }
-.Imagen_PTexto{
 
+.bigger {
+    transform: scale(0.95);
 }
+
 #miBoton {
     /*background-image: flecha.png;*/
     background-size: cover;
