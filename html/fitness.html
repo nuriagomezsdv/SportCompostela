@@ -45,30 +45,30 @@
 <main>
 
 
-
     <section id="instalaciones">
         <h2>INSTALACIONES</h2>
-        <div class="PTexto_Imagen">
-            <p class="Texto">
-                <span style="color: #019853; font-size: 30px"> ☆ </span>  <span style="font-family: Protomolecule; font-size: 35px; text-align: left"> LAS <span style="color: #019853; font-size: 40px"> mejores instalaciones </span> <br> PENSADAS PARA TI </span><br> <br>
-                Disfruta de las <span style="color: #019853; font-size: 20px"> mejores instalaciones </span> disponibles en nuestro gimnasio, con <span style="color: #019853; font-size: 20px"> equipamiento
-                de última generación </span>, incluyendo amplios espacios y salas para la práctica deportiva.
-            </p>
-            <figure class="Imagen">
+        <div class="cuadriculaflex">
+            <div class="cajaTexto">
+                <p>
+                    <span class="colorVerdeResaltado"> ☆ </span>  <span class="letraEspecial"> LAS <span class="colorVerdeResaltado"> mejores instalaciones </span> PENSADAS PARA TI </span>
+                </p>
+                <p> Disfruta de las <span class="colorVerde"> mejores instalaciones </span> disponibles en nuestro gimnasio, con <span class="colorVerde"> equipamiento
+                    de última generación </span>, incluyendo amplios espacios y salas para la práctica deportiva.
+                </p>
+            </div>
+            <figure class="cajaImagen">
                 <a href="../Imagenes/salaMaquinas.jpg "><img src="../Imagenes/salaMaquinas.jpg "  onload="makeOriginalAndNormal(this)"  onmouseover="makeGrayAndBigger(this)" onmouseout="makeOriginalAndNormal(this)" alt="Sala de maquinas funcionales"></a>
-                <p style="margin-top: 0"> SALA DE MÁQUINAS FUNCIONALES</p>
+                <p> SALA DE MÁQUINAS FUNCIONALES</p>
             </figure>
-        </div>
 
-        <div class="Imagen_Imagen">
-            <figure class="Imagen1">
+            <figure class="cajaImagen">
                 <a href="../Imagenes/PesoLibreCrossfit.png "><img src="../Imagenes/PesoLibreCrossfit.png"  onload="makeOriginalAndNormal(this)"  onmouseover="makeGrayAndBigger(this)" onmouseout="makeOriginalAndNormal(this)" alt="Sala de peso libre y crossfit"></a>
-                <p style="margin-top: 0"> SALA DE PESO LIBRE Y CROSSFIT</p>
+                <p > SALA DE PESO LIBRE Y CROSSFIT</p>
             </figure>
 
-            <figure class="Imagen2">
+            <figure class="cajaImagen">
                 <a href="../Imagenes/ZonaActividades.png "><img src="../Imagenes/ZonaActividades.png"  onload="makeOriginalAndNormal(this)"  onmouseover="makeGrayAndBigger(this)" onmouseout="makeOriginalAndNormal(this)" alt="Sala de actividades"></a>
-                <p style="margin-top: 0"> SALA DE ACTIVIDADES</p>
+                <p> SALA DE ACTIVIDADES</p>
             </figure>
         </div>
 
@@ -78,15 +78,20 @@
     </section>
     <section id="actividades">
         <h2 >ACTIVIDADES</h2>
-        <p id="prueba">
+        <p>
             Únete a las múltiples actividades de nuestro centro, trabajando en grupos,
             de forma que todos compartiréis el mismo objetivo.
         </p>
 
         <div class="Menu_Informacion" id="MenuActividades">
             <ul class="MenuLista_Inf" >
-                <li class="MenuItem_Inf" id="FuncionalMenu" onclick="mostrarFigura('Funcional')"> FUNCIONAL </li>
-                <li class="MenuItem_Inf" id="YogaMenu" onclick="mostrarFigura('Yoga')">  YOGA  </li>
+                <li class="MenuItem_Inf"  onclick="mostrarFigura('Funcional')"> FUNCIONAL </li>
+                <li class="MenuItem_Inf"  onclick="mostrarFigura('Yoga')">  YOGA  </li>
+                <li class="MenuItem_Inf" onclick="mostrarFigura('BodyCombact')">  BODY COMBACT </li>
+                <li class="MenuItem_Inf" onclick="mostrarFigura('Spinning')">  SPINNING </li>
+                <li class="MenuItem_Inf" onclick="mostrarFigura('AquaGym')">  AQUAGYM </li>
+
+
 
             </ul>
             <figure class="Informacion" id="Funcional">
@@ -97,73 +102,38 @@
                 corrige la postura y fortalece la masa muscular.</p>
             </figure>
             <figure class="Informacion" id="Yoga">
-                <a href="../Imagenes/Yoga.jpeg "><img src="../Imagenes/Yoga.jpeg" alt="Funcional"></a>
+                <a href="../Imagenes/Yoga.jpeg "><img src="../Imagenes/Yoga.jpeg" alt="Yoga"></a>
 
                 <p>   Conecta cuerpo y mente,  mediante posturas físicas, ejercicios de respiración
                     y meditación. Todo ello para mejorar tu salud general y encontra un momento
                     de relajación.  </p>
             </figure>
+            <figure class="Informacion" id="BodyCombact">
+                <a href="../Imagenes/bodyCombat.webp"><img src="../Imagenes/bodyCombat.webp" alt="BodyCombact"></a>
+
+                <p>    Ponte en forma aprovechando los movimientos de artes marciales como
+                    taekwondo, karate, capoeira, muay thay , tai chi o boxeo. Todo ello
+                    con coreografías que ejercitarán todas las zonas de tu cuerpo.  </p>
+            </figure>
+            <figure class="Informacion" id="Spinning">
+                <a href="../Imagenes/Spinning.webp"><img src="../Imagenes/Spinning.webp" alt="BodyCombact"></a>
+
+                <p> Quema calorías,  mejora tu capacidad cardiovascular y entrena para
+                    las salidas a la carretera con nuestras clases de Spinning, con música
+                    y un personal técnico de alto nivel que ayudarán a tu preparación sea
+                    óptima.  </p>
+            </figure>
+            <figure class="Informacion" id="AquaGym">
+                <a href="../Imagenes/AquaGym.jpg"><img src="../Imagenes/AquaGym.jpg" alt="BodyCombact"></a>
+
+                <p> Aprovecha las ventajas de la natación para realizar ejercicio a través
+                    de coreografías musicales, de una manera divertida y segura para tu
+                    cuerpo.  </p>
+            </figure>
 
         </div>
 
 
-
-        <div style="text-align: center">
-            <img class="movibles" src="../Imagenes/Funcional.jpeg" alt="Funcional">
-            <br>
-            <strong> Funcional </strong>
-            <br>
-            <p> El entrenamiento funcional se adapta a los movimiento naturales del cuerpo,
-                mejora la movilidad corporal, la agilidad y el equilibrio, desarrolla la salud cardiovascular,
-                corrige la postura y fortalece la masa muscular.
-            </p>
-
-        </div>
-        <div style="text-align: center">
-            <img class="movibles" src="../Imagenes/Yoga.jpeg" alt="Yoga" >
-            <br>
-            <strong> Yoga </strong>
-            <br>
-            <p>
-                Conecta cuerpo y mente,  mediante posturas físicas, ejercicios de respiración
-                y meditación. Todo ello para mejorar tu salud general y encontra un momento
-                de relajación.
-            </p>
-        </div>
-        <div style="text-align: center">
-            <img class="movibles" src="../Imagenes/bodyCombat.webp" alt="BodyCombat" >
-            <br>
-            <strong> BodyCombat </strong>
-            <br>
-            <p>
-                Ponte en forma aprovechando los movimientos de artes marciales como
-                taekwondo, karate, capoeira, muay thay , tai chi o boxeo. Todo ello
-                con coreografías que ejercitarán todas las zonas de tu cuerpo.
-            </p>
-        </div>
-        <div style="text-align: center">
-            <img class="movibles" src="../Imagenes/Spinning.webp" alt="Spinning" >
-            <br>
-            <strong> Spinning </strong>
-            <br>
-            <p>
-                Quema calorías,  mejora tu capacidad cardiovascular y entrena para
-                las salidas a la carretera con nuestras clases de Spinning, con música
-                y un personal técnico de alto nivel que ayudarán a tu preparación sea
-                óptima.
-            </p>
-        </div>
-        <div style="text-align: center">
-            <img class="movibles" src="../Imagenes/AquaGym.jpg" alt="Aquagym" >
-            <br>
-            <strong> AquaGym </strong>
-            <br>
-            <p>
-                Aprovecha las ventajas de la natación para realizar ejercicio a través
-                de coreografías musicales, de una manera divertida y segura para tu
-                cuerpo.
-            </p>
-        </div>
 
 
     </section>
