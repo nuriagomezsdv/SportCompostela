@@ -10,3 +10,21 @@ function makeOriginalAndNormal(img) {
     img.classList.remove("bigger");
 }
 
+
+
+function mostrarFigura(idFiguras) {
+    var figura = document.getElementById(idFiguras);
+    if (figura.style.display === "none") {
+        figura.style.display = "block";
+
+    } else {
+        figura.style.display = "none";
+    }
+
+    var otrasFiguras = document.querySelectorAll('#MenuActividades figure:not(#' + idFiguras + ')');
+    for (var i = 0; i < otrasFiguras.length; i++) {
+        otrasFiguras[i].style.display = "none";
+    }
+
+
+}

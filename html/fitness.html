@@ -77,21 +77,35 @@
 
     </section>
     <section id="actividades">
-        <h2>ACTIVIDADES</h2>
+        <h2 >ACTIVIDADES</h2>
+        <p id="prueba">
+            Únete a las múltiples actividades de nuestro centro, trabajando en grupos,
+            de forma que todos compartiréis el mismo objetivo.
+        </p>
 
-        <div class="PTexto_Imagen">
-            <p class="Texto">
-                Únete a las múltiples actividades de nuestro centro, trabajando en grupos,
-                de forma que todos compartiréis el mismo objetivo.
-            </p>
-            <figure class="Imagen">
-                <a href="../Imagenes/Funcional.jpeg "><img src="../Imagenes/Funcional.jpeg "  onload="makeOriginalAndNormal(this)"
-                                                           onmouseover="makeGrayAndBigger(this)" onmouseout="makeOriginalAndNormal(this)" alt="Funcional"></a>
-                <p style="margin-top: 0"> El entrenamiento funcional se adapta a los movimiento naturales del cuerpo,
-                    mejora la movilidad corporal, la agilidad y el equilibrio, desarrolla la salud cardiovascular,
-                    corrige la postura y fortalece la masa muscular.</p>
+        <div class="Menu_Informacion" id="MenuActividades">
+            <ul class="MenuLista_Inf" >
+                <li class="MenuItem_Inf" id="FuncionalMenu" onclick="mostrarFigura('Funcional')"> FUNCIONAL </li>
+                <li class="MenuItem_Inf" id="YogaMenu" onclick="mostrarFigura('Yoga')">  YOGA  </li>
+
+            </ul>
+            <figure class="Informacion" id="Funcional">
+                <a href="../Imagenes/Funcional.jpeg "><img src="../Imagenes/Funcional.jpeg" alt="Funcional"></a>
+
+                <p>  El entrenamiento funcional se adapta a los movimiento naturales del cuerpo,
+                mejora la movilidad corporal, la agilidad y el equilibrio, desarrolla la salud cardiovascular,
+                corrige la postura y fortalece la masa muscular.</p>
             </figure>
+            <figure class="Informacion" id="Yoga">
+                <a href="../Imagenes/Yoga.jpeg "><img src="../Imagenes/Yoga.jpeg" alt="Funcional"></a>
+
+                <p>   Conecta cuerpo y mente,  mediante posturas físicas, ejercicios de respiración
+                    y meditación. Todo ello para mejorar tu salud general y encontra un momento
+                    de relajación.  </p>
+            </figure>
+
         </div>
+
 
 
         <div style="text-align: center">
