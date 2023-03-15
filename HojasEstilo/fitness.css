@@ -72,6 +72,41 @@
     min-height: 500px;
 }
 
+
 .alturaMinima{
     min-height: 800px;
 }
+
+#entrenamientoPersonalizado .cajaTexto{
+
+    max-width: 20%;
+    padding: 10px;
+    height: 360px;
+    border-radius: 20px;
+    background: #EBE4E4;
+}
+
+#entrenamientoPersonalizado .cuadriculaflex{
+    min-height: 400px;
+}
+
+.fondoVerde{
+    background: #b2d8b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.textoPrecio{
+    color: #019853;
+    font-weight: bold;
+}
+
+#entrenamientoPersonalizado p{
+    text-align: center;
+    padding: 20px;
+}
+
