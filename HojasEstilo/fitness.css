@@ -16,11 +16,9 @@
     }
 }
 
-
 .escondida{
     display: none;
 }
-
 
 #MenuActividades .subMenuLista{
     flex-direction: column;
@@ -34,7 +32,6 @@
     text-decoration: none;
     color:inherit;
 }
-
 
 #MenuActividades  .submenuItem{
     margin: 15px 0;
