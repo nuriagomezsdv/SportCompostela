@@ -212,7 +212,7 @@ figure img {
         flex-direction: column;
     }
     .cajaTexto{
-        padding-left: 0;
+        padding-left: 20px;
     }
 }
 
@@ -241,127 +241,6 @@ figure img {
     font-size: 23px;
 }
 
-
-/*Diseño a dos columnas del contenido de la pagina web*/
-
-.PTexto_Imagen{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px;
-    grid-gap: 250px;
-    text-align: center;
-    margin: 75px;
-    max-width: fit-content;
-}
-
-.Texto{
-    grid-column: 1;
-    grid-row: 1;
-    font-size: 20px;
-    text-align: left;
-    padding-top: 5vw;
-    padding-left: 5vw;
-
-}
-.Imagen{
-    grid-column: 2;
-    grid-row: 1;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    font-size: 25px;
-    font-family: Protomolecule;
-    padding-top: 2vw;
-    max-width: 650px;
-}
-
-.Imagen_Imagen{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px;
-    grid-gap: 250px;
-    text-align: center;
-    margin-left: 75px;
-    margin-right: 75px;
-    padding-left: 0;
-    max-width: 100%;
-}
-
-.Imagen1{
-    grid-column: 1;
-    grid-row: 1;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    font-size: 25px;
-    font-family: Protomolecule;
-    max-width: 650px;
-    padding-top: 5vw;
-    padding-left: 5vw;
-}
-
-@media screen and (max-width: 1400px){
-    .PTexto_Imagen {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-        grid-gap: 1vw;
-        text-align: center;
-    }
-    .Texto{
-        grid-row: 1;
-        grid-column: 1;
-        max-width: 100%;
-        padding-top: 5vw;
-        padding-left: 5vw;
-    }
-    .Imagen{
-        grid-row: 2;
-        grid-column: 1;
-        max-width: 100%;
-        object-fit: scale-down;
-    }
-    .Imagen_Imagen {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 1vw;
-        text-align: center;
-    }
-    .Imagen1{
-        grid-row: 1;
-        grid-column: 1;
-        padding-left: 0;
-        padding-top: 0;
-        max-width: 100%;
-        object-fit: scale-down;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    .PTexto_Imagen {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1.3fr;
-        grid-gap: 1vw;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 650px){
-    .PTexto_Imagen {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .Imagen_Imagen{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-}
-
 .smaller {
     transform: scale(0.95);
 }
@@ -377,8 +256,6 @@ figure img {
 
 
 /*Fin de pie de pagina*/
-
-
 
 
 
