@@ -16,29 +16,62 @@
     }
 }
 
-#MenuActividades > .cajaImagen{
+
+.escondida{
     display: none;
-    font-family: Serif;
-    font-size: 21px;
-    margin-top: 40px;
 }
 
-#MenuActividades > .cajaTexto{
+
+#MenuActividades .subMenuLista{
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    color:inherit;
 }
 
-#MenuActividades  .menuItem{
-    margin: 20px;
-    background-color: #b2d8b2;
-    padding:5px 130px;
-    width: 150px;
 
+#MenuActividades  .submenuItem{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 50px;
+    padding:5px 60px;
+    background-color: lightgray;
+    font-family: Protomolecule;
 
 }
 
-#MenuActividades  .menuItem:hover{
-    background: #019853;
+#MenuActividades  .submenuItem:hover{
+    background: #b2d8b2;
     font-weight: bold;
     font-size: inherit;
-
 }
 
+#MenuActividades .cajaImagen{
+    display: flex;
+    justify-items: flex-start;
+    /*padding-right: 210px;
+    padding-top: 150px;*/
+}
+.textoImagen{
+    padding-top: 20px;
+    font-family: Serif;
+    font-size: 17px;
+    max-width: 520px;
+}
+
+.actividades{
+    min-height: 500px;
+}
+
+.alturaMinima{
+    min-height: 800px;
+}
