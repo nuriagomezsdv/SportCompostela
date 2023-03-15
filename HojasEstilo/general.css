@@ -244,3 +244,20 @@ figure img {
 .smaller {
     transform: scale(0.95);
 }
+
+
+/*Para el pie de pagina*/
+
+.piePagina{
+    background: black;
+    color: white;
+}
+
+
+
+/*Fin de pie de pagina*/
+
+
+
+
+
