@@ -17,8 +17,6 @@ function mostrarFigura(idFiguras) {
     if (figura.style.display === "none") {
         figura.style.display = "block";
 
-    } else {
-        figura.style.display = "none";
     }
 
     var otrasFiguras = document.querySelectorAll('#MenuActividades figure:not(#' + idFiguras + ')');

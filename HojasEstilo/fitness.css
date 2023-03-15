@@ -16,3 +16,29 @@
     }
 }
 
+#MenuActividades > .cajaImagen{
+    display: none;
+    font-family: Serif;
+    font-size: 21px;
+    margin-top: 40px;
+}
+
+#MenuActividades > .cajaTexto{
+}
+
+#MenuActividades  .menuItem{
+    margin: 20px;
+    background-color: #b2d8b2;
+    padding:5px 130px;
+    width: 150px;
+
+
+}
+
+#MenuActividades  .menuItem:hover{
+    background: #019853;
+    font-weight: bold;
+    font-size: inherit;
+
+}
+

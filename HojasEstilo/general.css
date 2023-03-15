@@ -366,6 +366,9 @@ figure img {
     transform: scale(0.95);
 }
 
+
+/*Esto va a haber que quitarlo*/
+
 .Menu_Informacion{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -420,6 +423,8 @@ figure.Informacion{
     max-width: 650px;
     display: none;
 }
+
+/*Fin de lo que va a haber que borrar*/
 
 
 
