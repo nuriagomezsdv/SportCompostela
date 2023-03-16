@@ -30,14 +30,27 @@ h3{
 
 a {
     white-space: nowrap;
+}
+
+footer a{
     text-decoration: none;
-    color:inherit;
+    color: black;
+
+}
+
+footer a:hover{
+
+    text-decoration: underline;
 }
 
 
 figure img {
     max-width: 100%;
     max-height: 100%;
+}
+
+img{
+    border-radius: 20px;
 }
 
 .logo{
@@ -242,16 +255,62 @@ figure img {
     font-size: 23px;
 }
 
-.smaller {
-    transform: scale(0.95);
+.bigger {
+    transform: scale(1.05);
+}
+
+.fondoGris{
+    background: #b2d8b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+.textoPrecio{
+    color: #019853;
+    font-weight: bold;
 }
 
 
 /*Para el pie de pagina*/
 
-.piePagina{
+
+.imagenGrande{
+    max-width: 18%;
+    width: 8%;
+    margin: 20px;
+}
+
+.imagenPequeña{
+    width: 2%;
+    margin: 10px;
+}
+
+footer .cajaTexto{
+    padding-left: 0;
+    max-width: 50%;
+    display: flex;
+    justify-content: left;
+    font-size: 17px;
+    font-family: Protomolecule;
+}
+
+footer{
+    margin-top: 40px;
     background: black;
     color: white;
+}
+
+footer img{
+    border-radius: 0;
+}
+
+.fondoVerde{
+    background: #b2d8b2;
 }
 
 
