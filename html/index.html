@@ -1,104 +1,182 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Gimnasio SportCompostela">
     <meta name="keywords" content="Gimnasio, Fitness, Nutrición, Salud">
+
     <title>SportCompostela</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="../Imagenes/pesa.jpg">
     <link rel="stylesheet" href="../HojasEstilo/sportCompostela.css">
+    <script src="../scripts/general.js"></script>
 </head>
 <body>
 <header>
     <a href="index.html" class="logo">
-        <img src="../Imagenes/logo.png" alt="Gimnasio SportCompostela"width=20% height=20%>
+        <img src="../Imagenes/logo.png" alt="Gimnasio SportCompostela" width=20% height=20%>
     </a>
 </header>
 <nav>
     <div class="menu">
         <ul class="menuLista">
-            <li class="menuItem"> <a class="refMenu" href="fitness.html"> FITNESS </a> </li>
-            <li class="menuItem"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a> </li>
+            <li class="menuItem"><a class="refMenu" href="fitness.html"> FITNESS </a></li>
+            <li class="menuItem"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a></li>
             <li class="menuItem"><a class="refMenu" href="personal.html"> PERSONAL</a></li>
             <li class="menuItem"><a class="refMenu" href="cuotas.html"> CUOTAS</a></li>
-            <li class="menuItem"><a class="refMenu" href="contacto.html"> CONTACTO</a> </li>
+            <li class="menuItem"><a class="refMenu" href="contacto.html"> CONTACTO</a></li>
         </ul>
     </div>
 </nav>
 <main>
     <figure class="inicio">
-        <img src="../Imagenes/gimnasio.jpg" alt="Gimnasio SportCompostela" width=100%>
-        <h class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA </h>
+        <img src="../Imagenes/gimnasio.jpg" alt="Gimnasio SportCompostela">
+        <h class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</h>
     </figure>
-    <section>
-        <h2>UN MÉTODO QUE FUNCIONA!</h2>
-        <ul>
-            <li>Personalización</li>
-            <li>Planificación</li>
-            <li>Seguimiento</li>
-        </ul>
+    <div class="cuadriculaflex">
+        <div class="cajaTexto">
+            <p>
+                <span class="colorVerdeResaltado"> ☆ </span> <span class="letraEspecial"> CONOCE EL MÉTODO <span
+                    class="colorVerdeResaltado"> sportcompostela </span> Y EMPIEZA A SENTIRTE BIEN ! </span>
+            </p>
+            <ul class="listaInicial">
+                <li><span class="colorVerde"> → </span> PERSONALIZACIÓN</li>
+                <li><span class="colorVerde"> → </span> PLANIFICACIÓN</li>
+                <li><span class="colorVerde"> → </span> SEGUIMIENTO</li>
+            </ul>
+        </div>
+        <figure class="cajaImagen">
+            <a href="../Imagenes/imagen_index1.jpg "><img src="../Imagenes/imagen_index1.jpg "
+                                                          onload="makeOriginalAndNormal(this)"
+                                                          onmouseover="makeGrayAndBigger(this)"
+                                                          onmouseout="makeOriginalAndNormal(this)"
+                                                          alt="Sala de maquinas funcionales"></a>
+        </figure>
+    </div>
+    </figure>
     </section>
-    <section id="instalaciones">
-        <h2>LAS MEJORES INSTALACIONES</h2>
-        <p>Disfruta de los múltiples espacios deportivos del centro SportCompostela.</p>
-        <p>
-            <a href="fitness.html" class="boton">INSTALACIONES</a>
-        </p>
-    </section>
-    <section id="actividades">
-        <h2>ACTIVIDADES DIRIGIDAS</h2>
-        <ul>
-            <li><a href="#">BALANCE</a></li>
-            <li><a href="#">TONO</a></li>
-            <li><a href="#">CARDIO</a></li>
-            <li><a href="#">WATER</a></li>
-        </ul>
-        <p>
-            <a href="fitness.html" class="boton">ACTIVIDADES</a>.
-        </p>
 
+    <section id="instalaciones">
+        <div class="cuadriculaflex">
+            <figure class="cajaImagen">
+                <a href="../Imagenes/salaMaquinas.jpg "><img src="../Imagenes/salaMaquinas.jpg "
+                                                             onload="makeOriginalAndNormal(this)"
+                                                             onmouseover="makeGrayAndBigger(this)"
+                                                             onmouseout="makeOriginalAndNormal(this)"
+                                                             alt="Sala de maquinas funcionales"></a>
+            </figure>
+            <div class="cajaTexto cajaTextoDerecha">
+                <p>
+                    <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> LAS MEJORES <span
+                        class="colorVerdeResaltado"> instalaciones </span> </span>
+                </p>
+                <p>Disfruta de los <span class="colorVerde"> MÚLTIPLES ESPACIOS DEPORTIVOS </span> del centro SportCompostela.</p>
+                <p>
+                <ul class="listaInicial">
+                    <li><span class="colorVerde"> → </span> SALA DE MÁQUINAS</li>
+                    <li><span class="colorVerde"> → </span> SALA DE PESO LIBRE Y CROSSFIT</li>
+                    <li><span class="colorVerde"> → </span> SALAS DE ACTIVIDADES</li>
+                    <li><span class="colorVerde"> → </span> PISCINA</li>
+                </ul>
+                <a href="fitness.html" class="boton"> VER INSTALACIONES</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="actividades">
+        <div class="cuadriculaflex">
+            <div class="cajaTexto">
+                <p>
+                    <span class="colorVerdeResaltado"> &#10143  </span> <span
+                        class="letraEspecial"> CONSULTA NUESTRAS <span
+                        class="colorVerdeResaltado"> actividades </span> DIRIGIDAS </span>
+                </p>
+                <ul class="listaInicial">
+                    <li><span class="colorVerde"> ✓ </span> FUNCIONAL</li>
+                    <li><span class="colorVerde"> ✓ </span> YOGA</li>
+                    <li><span class="colorVerde"> ✓ </span> BODY COMBACT</li>
+                    <li><span class="colorVerde"> ✓ </span> SPINNING</li>
+                    <li><span class="colorVerde"> ✓ </span> AQUAGYM</li>
+                </ul>
+                <p>
+                    <a href="fitness.html" class="boton"> VER ACTIVIDADES</a>.
+                </p>
+            </div>
+            <div class="cajaImagen">
+                <a href="../Imagenes/ZonaActividades.png "><img src="../Imagenes/ZonaActividades.png "
+                                                                onload="makeOriginalAndNormal(this)"
+                                                                onmouseover="makeGrayAndBigger(this)"
+                                                                onmouseout="makeOriginalAndNormal(this)"
+                                                                alt="Sala de maquinas funcionales"></a>
+            </div>
+        </div>
     </section>
     <section id="nutricion">
-        <h2>PLAN NUTRICIONAL</h2>
-        <ul>
-            <li><a href="#">ENTREVISTA INICIAL</a></li>
-            <li><a href="#">GENERACIÓN DE MENÚS</a></li>
-            <li><a href="#">SEGUIMIENTO MENSUAL</a></li>
-            <li><a href="#">NUTRICIÓN DEPORTIVA</a></li>
-        </ul>
-        <p>
-            <a href="nutricion.html" class="boton">SABER MÁS</a>.
-        </p>
-
+        <div class="cuadriculaflex">
+            <div class="cajaImagen">
+                <a href="../Imagenes/Nutricionista.jpg "><img src="../Imagenes/Nutricionista.jpg "
+                                                              onload="makeOriginalAndNormal(this)"
+                                                              onmouseover="makeGrayAndBigger(this)"
+                                                              onmouseout="makeOriginalAndNormal(this)"
+                                                              alt="Sala de maquinas funcionales"></a>
+            </div>
+            <div class="cajaTexto cajaTextoDerecha">
+                <p>
+                    <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> SOLICITA UN <span
+                        class="colorVerdeResaltado"> plan nutricional </span> A TU MEDIDA </span>
+                </p>
+                <ul class="listaInicial">
+                    <li><span class="colorVerde"> → </span> ENTREVISTA INICIAL</li>
+                    <li><span class="colorVerde"> → </span> GENERACIÓN DE MENÚS</li>
+                    <li><span class="colorVerde"> → </span> SEGUIMIENTO MENSUAL</li>
+                    <li><span class="colorVerde"> → </span> NUTRICIÓN DEPORTIVA</li>
+                </ul>
+                <p>
+                    <a href="nutricion.html" class="boton">SABER MÁS</a>.
+                </p>
+            </div>
+        </div>
     </section>
     <section id="personal">
-        <h2>MÁS DE 20 AÑOS DE EXPERIENCIA</h2>
-        <p>Los mejores profesionales a tu lado.</p>
+        <div class="cuadriculaflex">
 
-        <p>
-            <a href="personal.html" class="boton">CONÓCENOS</a>.
-        </p>
-
+            <div class="cajaTexto cajaTextoDerecha">
+                <p>
+                    <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> MÁS DE 20 AÑOS DE <span
+                        class="colorVerdeResaltado"> experiencia </span> </span>
+                </p>
+                <p>Los mejores <span class="colorVerde"> PROFESIONALES </span> a tu disposición para ofrecerte la mejor experiencia deportiva.</p>
+                <p>
+                    <a href="personal.html" class="boton">CONÓCENOS</a>.
+                </p>
+            </div>
+            <div class="cajaImagen">
+                <a href="../Imagenes/personal1..jpg "><img src="../Imagenes/personal1.jpg "
+                                                           onload="makeOriginalAndNormal(this)"
+                                                           onmouseover="makeGrayAndBigger(this)"
+                                                           onmouseout="makeOriginalAndNormal(this)"
+                                                           alt="Sala de maquinas funcionales"></a>
+            </div>
+        </div>
     </section>
-    <section id="blog">
-        <h2>ÚLTIMAS NOTICIAS en nuestro blog</h2>
-        <p>
-            <a href="personal.html" class="boton">DESCUBRE MÁS</a>.
-        </p>
 
-    </section>
     <section id="contacto">
         <h2>CONTÁCTANOS</h2>
-        <p> Puedes contactar con nosotros a través de nuestro correo electrónico, <a href="mailto:info@sportCompostela.com?subject=Solicitud de información&body=Hola,%0D%0A%0D%0AMe gustaría obtener más información sobre sus servicios.%0D%0A%0D%0AAtentamente,">info@sportCompostela.com</a>
+        <p> Puedes contactar con nosotros a través de nuestro correo electrónico, <a
+                href="mailto:info@sportCompostela.com?subject=Solicitud de información&body=Hola,%0D%0A%0D%0AMe gustaría obtener más información sobre sus servicios.%0D%0A%0D%0AAtentamente,">info@sportCompostela.com</a>
 
             , o llamando al teléfono 981 123 456. <br>
-            Si lo prefieres, acercate a nuestras instalaciones en la <a href="https://www.google.com/maps/place/R%C3%BAa+de+Santiago+del+Estero,+1,+15701+Santiago+de+Compostela,+A+Coru%C3%B1a/data=!4m2!3m1!1s0xd2efe3ffde684c7:0x9b5663500f280bc2?sa=X&ved=2ahUKEwj9rp_-3tT9AhXvMuwKHcZZAeAQ8gF6BAgVEAI" target="_blank">Calle Santiago del Estero, 1, 15702 Santiago de Compostela</a>.
-            También puedes rellenar el formulario presente en <a href="contacto.html">CONTACTO</a> y nos pondremos en contacto contigo lo antes posible!!
+            Si lo prefieres, acercate a nuestras instalaciones en la <a
+                    href="https://www.google.com/maps/place/R%C3%BAa+de+Santiago+del+Estero,+1,+15701+Santiago+de+Compostela,+A+Coru%C3%B1a/data=!4m2!3m1!1s0xd2efe3ffde684c7:0x9b5663500f280bc2?sa=X&ved=2ahUKEwj9rp_-3tT9AhXvMuwKHcZZAeAQ8gF6BAgVEAI"
+                    target="_blank">Calle Santiago del Estero, 1, 15702 Santiago de Compostela</a>.
+            También puedes rellenar el formulario presente en <a href="contacto.html">CONTACTO</a> y nos pondremos en
+            contacto contigo lo antes posible!!
         </p>
     </section>
 
-    </main>
+</main>
 </body>
 
 

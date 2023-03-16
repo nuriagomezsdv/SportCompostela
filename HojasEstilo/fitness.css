@@ -16,11 +16,9 @@
     }
 }
 
-
 .escondida{
     display: none;
 }
-
 
 #MenuActividades .subMenuLista{
     flex-direction: column;
@@ -34,7 +32,6 @@
     text-decoration: none;
     color:inherit;
 }
-
 
 #MenuActividades  .submenuItem{
     margin: 15px 0;
@@ -64,7 +61,7 @@
 .textoImagen{
     padding-top: 20px;
     font-family: Serif;
-    font-size: 17px;
+    font-size: 25px;
     max-width: 520px;
 }
 
@@ -89,7 +86,6 @@
 #entrenamientoPersonalizado .cuadriculaflex{
     min-height: 400px;
 }
-
 
 #entrenamientoPersonalizado p{
     text-align: center;

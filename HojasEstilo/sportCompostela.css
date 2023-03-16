@@ -21,3 +21,44 @@
     transform: translate(-50%, -50%);
 }
 
+p {
+    max-width: 600px;
+}
+
+.listaInicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.listaInicial li{
+    padding: 10px; /
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    font-family: Protomolecule;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.cajaImagen{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.boton{
+    width: 130px;
+}
+
+.cajaTextoDerecha{
+    padding: 0
+}
+.colorVerde{
+    font-family: Protomolecule;
+}
