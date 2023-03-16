@@ -1,1 +1,24 @@
 @import "general.css";
+
+#Seguimiento .cajaTexto{
+
+    max-width: 20%;
+    padding: 10px;
+    min-height: 380px;
+    border-radius: 20px;
+    background: #EBE4E4;
+}
+
+#Seguimiento .cuadriculaflex{
+    min-height: 400px;
+}
+
+#Seguimiento p{
+    text-align: center;
+    padding: 20px;
+}
+
+#GeneracionMenus .cajaTexto{
+    padding: 0;
+    margin-right: 30px;
+}
