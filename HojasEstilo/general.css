@@ -7,11 +7,10 @@ html{
     background-color: white;
     font-family: Serif;
     color: black;
-    margin: 0;
 }
 
 body{
-
+ margin: 0;
 }
 
 h2{
@@ -31,6 +30,8 @@ h3{
 
 a {
     white-space: nowrap;
+    text-decoration: none;
+    color:inherit;
 }
 
 
