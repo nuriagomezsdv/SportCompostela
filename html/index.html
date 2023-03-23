@@ -13,26 +13,25 @@
     <script src="../scripts/general.js"></script>
 </head>
 <body>
-<header>
-    <a href="index.html" class="logo">
-        <img src="../Imagenes/logo.png" alt="Gimnasio SportCompostela" width=20% height=20%>
-    </a>
-</header>
-<nav>
-    <div class="menu">
-        <ul class="menuLista">
-            <li class="menuItem"><a class="refMenu" href="fitness.html"> FITNESS </a></li>
-            <li class="menuItem"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a></li>
-            <li class="menuItem"><a class="refMenu" href="personal.html"> PERSONAL</a></li>
-            <li class="menuItem"><a class="refMenu" href="cuotas.html"> CUOTAS</a></li>
-            <li class="menuItem"><a class="refMenu" href="contacto.html"> CONTACTO</a></li>
-        </ul>
-    </div>
-</nav>
+<nav></nav>
 <main>
     <figure class="inicio">
         <img src="../Imagenes/gimnasio.jpg" alt="Gimnasio SportCompostela">
         <h class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</h>
+        <div class="menuInicio textoInicio">
+        <div class="menu">
+            <ul class="menuLista">
+                <li class="menuItem"><a class="refMenu" href="fitness.html"> FITNESS </a></li>
+                <li class="menuItem"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a></li>
+                <li class="menuItem"><a class="refMenu" href="personal.html"> PERSONAL</a></li>
+                <li class="menuItem"><a class="refMenu" href="cuotas.html"> CUOTAS</a></li>
+                <li class="menuItem"><a class="refMenu" href="contacto.html"> CONTACTO</a></li>
+            </ul>
+        </div>
+        </div>
+        <figure class="textoInicio ImagenInicio">
+            <a href="index.html"> <img src="../Imagenes/Logo-menu.png" alt="Gimnasio SportCompostela" width=50% height=50%> </a>
+        </figure>
     </figure>
     <div class="cuadriculaflex">
         <div class="cajaTexto">
@@ -48,119 +47,115 @@
         </div>
         <figure class="cajaImagen">
             <a href="../Imagenes/imagen_index1.jpg "><img src="../Imagenes/imagen_index1.jpg "
-                                                          onload="makeOriginalAndNormal(this)"
-                                                          onmouseover="makeGrayAndBigger(this)"
-                                                          onmouseout="makeOriginalAndNormal(this)"
+                                                          onload="makeOriginal(this)"
+                                                          onmouseover="makeGray(this)"
+                                                          onmouseout="makeOriginal(this)"
                                                           alt="Sala de maquinas funcionales"></a>
         </figure>
     </div>
-    </figure>
-    </section>
 
-    <section id="instalaciones">
-        <div class="cuadriculaflex">
-            <figure class="cajaImagen">
-                <a href="../Imagenes/salaMaquinas.jpg "><img src="../Imagenes/salaMaquinas.jpg "
-                                                             onload="makeOriginalAndNormal(this)"
-                                                             onmouseover="makeGrayAndBigger(this)"
-                                                             onmouseout="makeOriginalAndNormal(this)"
-                                                             alt="Sala de maquinas funcionales"></a>
-            </figure>
-            <div class="cajaTexto cajaTextoDerecha">
-                <p>
-                    <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> LAS MEJORES <span
-                        class="colorVerdeResaltado"> instalaciones </span> </span>
-                </p>
-                <p>Disfruta de los <span class="colorVerde"> MÚLTIPLES ESPACIOS DEPORTIVOS </span> del centro SportCompostela.</p>
-                <p>
-                <ul class="listaInicial">
-                    <li><span class="colorVerde"> → </span> SALA DE MÁQUINAS</li>
-                    <li><span class="colorVerde"> → </span> SALA DE PESO LIBRE Y CROSSFIT</li>
-                    <li><span class="colorVerde"> → </span> SALAS DE ACTIVIDADES</li>
-                    <li><span class="colorVerde"> → </span> PISCINA</li>
-                </ul>
-                <a href="fitness.html" class="boton"> VER INSTALACIONES</a>
-                </p>
-            </div>
+    <div class="cuadriculaflex">
+        <figure class="cajaImagen">
+            <a href="../Imagenes/salaMaquinas.jpg "><img src="../Imagenes/salaMaquinas.jpg "
+                                                         onload="makeOriginal(this)"
+                                                         onmouseover="makeGray(this)"
+                                                         onmouseout="makeOriginal(this)"
+                                                         alt="Sala de maquinas funcionales"></a>
+        </figure>
+        <div class="cajaTexto cajaTextoDerecha">
+            <p>
+                <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> LAS MEJORES <span
+                    class="colorVerdeResaltado"> instalaciones </span> </span>
+            </p>
+            <p>Disfruta de los <span class="colorVerde"> MÚLTIPLES ESPACIOS DEPORTIVOS </span> del centro
+                SportCompostela.</p>
+            <p>
+            <ul class="listaInicial">
+                <li><span class="colorVerde"> → </span> SALA DE MÁQUINAS</li>
+                <li><span class="colorVerde"> → </span> SALA DE PESO LIBRE Y CROSSFIT</li>
+                <li><span class="colorVerde"> → </span> SALAS DE ACTIVIDADES</li>
+                <li><span class="colorVerde"> → </span> PISCINA</li>
+            </ul>
+            <a href="fitness.html" class="boton"> VER INSTALACIONES</a>
+            </p>
         </div>
-    </section>
+    </div>
 
-    <section id="actividades">
-        <div class="cuadriculaflex">
-            <div class="cajaTexto">
-                <p>
-                    <span class="colorVerdeResaltado"> &#10143  </span> <span
-                        class="letraEspecial"> CONSULTA NUESTRAS <span
-                        class="colorVerdeResaltado"> actividades </span> DIRIGIDAS </span>
-                </p>
-                <ul class="listaInicial">
-                    <li><span class="colorVerde"> ✓ </span> FUNCIONAL</li>
-                    <li><span class="colorVerde"> ✓ </span> YOGA</li>
-                    <li><span class="colorVerde"> ✓ </span> BODY COMBACT</li>
-                    <li><span class="colorVerde"> ✓ </span> SPINNING</li>
-                    <li><span class="colorVerde"> ✓ </span> AQUAGYM</li>
-                </ul>
-                <p>
-                    <a href="fitness.html" class="boton"> VER ACTIVIDADES</a>.
-                </p>
-            </div>
-            <div class="cajaImagen">
-                <a href="../Imagenes/ZonaActividades.png "><img src="../Imagenes/ZonaActividades.png "
-                                                                onload="makeOriginalAndNormal(this)"
-                                                                onmouseover="makeGrayAndBigger(this)"
-                                                                onmouseout="makeOriginalAndNormal(this)"
-                                                                alt="Sala de maquinas funcionales"></a>
-            </div>
-        </div>
-    </section>
-    <section id="nutricion">
-        <div class="cuadriculaflex">
-            <div class="cajaImagen">
-                <a href="../Imagenes/Nutricionista.jpg "><img src="../Imagenes/Nutricionista.jpg "
-                                                              onload="makeOriginalAndNormal(this)"
-                                                              onmouseover="makeGrayAndBigger(this)"
-                                                              onmouseout="makeOriginalAndNormal(this)"
-                                                              alt="Sala de maquinas funcionales"></a>
-            </div>
-            <div class="cajaTexto cajaTextoDerecha">
-                <p>
-                    <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> SOLICITA UN <span
-                        class="colorVerdeResaltado"> plan nutricional </span> A TU MEDIDA </span>
-                </p>
-                <ul class="listaInicial">
-                    <li><span class="colorVerde"> → </span> ENTREVISTA INICIAL</li>
-                    <li><span class="colorVerde"> → </span> GENERACIÓN DE MENÚS</li>
-                    <li><span class="colorVerde"> → </span> SEGUIMIENTO MENSUAL</li>
-                    <li><span class="colorVerde"> → </span> NUTRICIÓN DEPORTIVA</li>
-                </ul>
-                <p>
-                    <a href="nutricion.html" class="boton">SABER MÁS</a>.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section id="personal">
-        <div class="cuadriculaflex">
 
-            <div class="cajaTexto cajaTextoDerecha">
-                <p>
-                    <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> MÁS DE 20 AÑOS DE <span
-                        class="colorVerdeResaltado"> experiencia </span> </span>
-                </p>
-                <p>Los mejores <span class="colorVerde"> PROFESIONALES </span> a tu disposición para ofrecerte la mejor experiencia deportiva.</p>
-                <p>
-                    <a href="personal.html" class="boton">CONÓCENOS</a>.
-                </p>
-            </div>
-            <div class="cajaImagen">
-                <a href="../Imagenes/personal1..jpg "><img src="../Imagenes/personal1.jpg "
-                                                           onload="makeOriginalAndNormal(this)"
-                                                           onmouseover="makeGrayAndBigger(this)"
-                                                           onmouseout="makeOriginalAndNormal(this)"
-                                                           alt="Sala de maquinas funcionales"></a>
-            </div>
+    <div class="cuadriculaflex">
+        <div class="cajaTexto">
+            <p>
+                <span class="colorVerdeResaltado"> &#10143  </span> <span
+                    class="letraEspecial"> CONSULTA NUESTRAS <span
+                    class="colorVerdeResaltado"> actividades </span> DIRIGIDAS </span>
+            </p>
+            <ul class="listaInicial">
+                <li><span class="colorVerde"> ✓ </span> FUNCIONAL</li>
+                <li><span class="colorVerde"> ✓ </span> YOGA</li>
+                <li><span class="colorVerde"> ✓ </span> BODY COMBACT</li>
+                <li><span class="colorVerde"> ✓ </span> SPINNING</li>
+                <li><span class="colorVerde"> ✓ </span> AQUAGYM</li>
+            </ul>
+            <p>
+                <a href="fitness.html" class="boton"> VER ACTIVIDADES</a>.
+            </p>
         </div>
-    </section>
+        <figure class="cajaImagen">
+            <a href="../Imagenes/ZonaActividades.png "><img src="../Imagenes/ZonaActividades.png "
+                                                            onload="makeOriginal(this)"
+                                                            onmouseover="makeGray(this)"
+                                                            onmouseout="makeOriginal(this)"
+                                                            alt="Sala de maquinas funcionales"></a>
+        </figure>
+    </div>
+
+
+    <div class="cuadriculaflex">
+        <figure class="cajaImagen">
+            <a href="../Imagenes/Nutricionista.jpg "><img src="../Imagenes/Nutricionista.jpg "
+                                                          onload="makeOriginal(this)"
+                                                          onmouseover="makeGray(this)"
+                                                          onmouseout="makeOriginal(this)"
+                                                          alt="Sala de maquinas funcionales"></a>
+        </figure>
+        <div class="cajaTexto cajaTextoDerecha">
+            <p>
+                <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> SOLICITA UN <span
+                    class="colorVerdeResaltado"> plan nutricional </span> A TU MEDIDA </span>
+            </p>
+            <ul class="listaInicial">
+                <li><span class="colorVerde"> → </span> ENTREVISTA INICIAL</li>
+                <li><span class="colorVerde"> → </span> GENERACIÓN DE MENÚS</li>
+                <li><span class="colorVerde"> → </span> SEGUIMIENTO MENSUAL</li>
+                <li><span class="colorVerde"> → </span> NUTRICIÓN DEPORTIVA</li>
+            </ul>
+            <p>
+                <a href="nutricion.html" class="boton">SABER MÁS</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="cuadriculaflex">
+
+        <div class="cajaTexto cajaTextoDerecha">
+            <p>
+                <span class="colorVerdeResaltado"> &#10143  </span> <span class="letraEspecial"> MÁS DE 20 AÑOS DE <span
+                    class="colorVerdeResaltado"> experiencia </span> </span>
+            </p>
+            <p>Los mejores <span class="colorVerde"> PROFESIONALES </span> a tu disposición para ofrecerte la mejor
+                experiencia deportiva.</p>
+            <p>
+                <a href="personal.html" class="boton">CONÓCENOS</a>.
+            </p>
+        </div>
+        <figure class="cajaImagen">
+            <a href="../Imagenes/personal1..jpg "><img src="../Imagenes/personal1.jpg "
+                                                       onload="makeOriginal(this)"
+                                                       onmouseover="makeGray(this)"
+                                                       onmouseout="makeOriginal(this)"
+                                                       alt="Sala de maquinas funcionales"></a>
+        </figure>
+    </div>
 
     <section id="contacto">
         <h2>CONTÁCTANOS</h2>
@@ -180,16 +175,14 @@
 </body>
 
 
-
 <footer class="cuadriculaflex piePagina">
 
     <img class="cajaImagen" src="../Imagenes/logo.png" alt="Gimnasio SportCompostela">
 
-    <img  class="cajaImagen" src="../Imagenes/Xunta.png" alt="Xunta Galicia" %>
+    <img class="cajaImagen" src="../Imagenes/Xunta.png" alt="Xunta Galicia" %>
 
-    <p class="cajaTexto">&copy 2023 SPORTCOMPOSTELA | DESARROLLADO POR NURFER | CENTRO DE DEPORTE Y SALUD EN SANTIAGO DE COMPOSTELA</p>
-
-
+    <p class="cajaTexto">&copy 2023 SPORTCOMPOSTELA | DESARROLLADO POR NURFER | CENTRO DE DEPORTE Y SALUD EN SANTIAGO DE
+        COMPOSTELA</p>
 
 
 </footer>
