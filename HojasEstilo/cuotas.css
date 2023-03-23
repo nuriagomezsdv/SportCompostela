@@ -1,1 +1,20 @@
 @import "general.css";
+
+
+#cuotas .cajaTexto{
+
+    width: 20%;
+    padding: 10px;
+    min-height: 380px;
+    border-radius: 20px;
+    background: #EBE4E4;
+}
+
+#cuotas .cuadriculaflex{
+    min-height: 400px;
+}
+
+#cuotas p{
+    text-align: center;
+    padding: 20px;
+}
