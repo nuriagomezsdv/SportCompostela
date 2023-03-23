@@ -8,6 +8,11 @@
     margin: 0;
 }
 
+.inicio img{
+    border-radius: 0px;
+    object-fit: cover;
+}
+
 .textoInicio{
     position: absolute; /*posicion abosluta con respecto al contenedor*/
     color: white;
@@ -19,6 +24,29 @@
     top: 30%;
     left: 45%;
     transform: translate(-50%, -50%);
+}
+
+.menuInicio{
+    top: 10%;
+    left: 60%;
+
+}
+
+.ImagenInicio{
+    top: 10%;
+    left: 10%;
+}
+
+.menuLista{
+    background-color: transparent;
+}
+
+.menu{
+    /*background-color: transparent;*/
+    background-color: rgba(180, 180, 180, 0.5);
+}
+.menuItem{
+    border-color: transparent;
 }
 
 p {
@@ -61,4 +89,13 @@ p {
 }
 .colorVerde{
     font-family: Protomolecule;
+}
+
+.cajaTexto{
+    text-align: left;
+}
+
+.menuItem:hover{
+    font-weight: bold;
+    font-size: 30px;
 }
