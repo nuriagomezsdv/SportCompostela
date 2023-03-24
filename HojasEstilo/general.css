@@ -51,6 +51,7 @@ figure img {
 
 img{
     border-radius: 20px;
+    width: 100%;
 }
 
 .logo{
@@ -68,9 +69,9 @@ img{
     flex-wrap: nowrap;
     padding:0;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
-    background-color: black;
+    /*background-color: black;*/
     color: white;
 }
 
@@ -100,7 +101,7 @@ img{
     list-style: none;
     text-decoration: none;
     color:inherit;
-    background-color: black;
+    /*background-color: black;*/
 }
 
 .subMenuLista{
@@ -127,7 +128,7 @@ img{
     width: 130px;
     height: 50px;
     padding:5px 10px;
-    border:1px solid black;
+    /*border:1px solid black;*/
     font-family: Protomolecule;
 }
 
