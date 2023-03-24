@@ -23,12 +23,12 @@ function makeOriginal(img){
 
 
 function mostrarFigura(idFiguras, idBotonClick) {
-    var figura = document.getElementById(idFiguras);
-    var funcionoIf = false;
+    let figura = document.getElementById(idFiguras);
+    let funcionoIf = false;
     let boton = document.getElementById(idBotonClick).children[0];
     let botones = document.querySelectorAll('#MenuActividades li');
 
-    for (var i = 0; i < botones.length; i++) {
+    for (let i = 0; i < botones.length; i++) {
         botones[i].style.backgroundColor = "lightgray";
     }
 
@@ -43,8 +43,8 @@ function mostrarFigura(idFiguras, idBotonClick) {
         boton.style.backgroundColor = "#b2d8b2";
     }
 
-    var otrasFiguras = document.querySelectorAll('#MenuActividades figure:not(#' + idFiguras + ')');
-    for (i = 0; i < otrasFiguras.length; i++) {
+    let otrasFiguras = document.querySelectorAll('#MenuActividades figure:not(#' + idFiguras + ')');
+    for (let i = 0; i < otrasFiguras.length; i++) {
         otrasFiguras[i].style.display = "none";
     }
 
