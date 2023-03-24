@@ -260,7 +260,7 @@ img{
     transform: scale(1.05);
 }
 
-.fondoGris{
+.fondoVerde{
     background: #b2d8b2;
     display: flex;
     align-items: center;
@@ -287,8 +287,9 @@ img{
 }
 
 .imagenPequeña{
-    width: 2%;
+    width: 7%;
     margin: 10px;
+    margin-right: 20px;
 }
 
 footer .cajaTexto{
@@ -310,9 +311,21 @@ footer img{
     border-radius: 0;
 }
 
-.fondoVerde{
+.fondoVerdeFoot{
     background: #b2d8b2;
+    color: black;
 }
+
+footer .cajaImagen{
+    font-size: 17px;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: Protomolecule;
+}
+
+
 
 
 
