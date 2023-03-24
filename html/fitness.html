@@ -23,6 +23,7 @@
 <nav>
     <div class="menu">
         <ul class="menuLista">
+            <li class="menuItem"><a class="refMenu"  href="index.html"><img src='../Imagenes/Logo-menu.png' alt='Gimnasio SportCompostela'></a> </li>
             <li class="menuItem" style="color: #019853; font-size: 30px"><a class="refMenu" href="fitness.html">
                 FITNESS </a></li>
             <li class="menuItem"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a></li>
@@ -102,11 +103,11 @@
                 </p>
                 <div class="subMenu">
                     <ul class="subMenuLista">
-                        <a class="refMenu" ><li class="submenuItem" onclick="mostrarFigura('Funcional')"> FUNCIONAL</li></a>
-                        <a class="refMenu"><li class="submenuItem" onclick="mostrarFigura('Yoga')"> YOGA</li></a>
-                        <a class="refMenu"> <li class="submenuItem" onclick="mostrarFigura('BodyCombact')"> BODY COMBACT </li></a>
-                        <a class="refMenu"><li class="submenuItem" onclick="mostrarFigura('Spinning')"> SPINNING </li></a>
-                        <a class="refMenu"><li class="submenuItem" onclick="mostrarFigura('AquaGym')"> AQUAGYM </li></a>
+                        <a class="refMenu" id="botonFuncional" ><li class="submenuItem" onclick="mostrarFigura('Funcional', 'botonFuncional')"> FUNCIONAL</li></a>
+                        <a class="refMenu" id="botonYoga"><li class="submenuItem" onclick="mostrarFigura('Yoga', 'botonYoga')"> YOGA</li></a>
+                        <a class="refMenu" id="botonBCombat"> <li class="submenuItem" onclick="mostrarFigura('BodyCombact', 'botonBCombat')"> BODY COMBAT </li></a>
+                        <a class="refMenu" id="botonSpinning"><li class="submenuItem" onclick="mostrarFigura('Spinning', 'botonSpinning')"> SPINNING </li></a>
+                        <a class="refMenu" id="botonAquagym"><li class="submenuItem" onclick="mostrarFigura('AquaGym','botonAquagym')"> AQUAGYM </li></a>
                     </ul>
                 </div>
             </div>

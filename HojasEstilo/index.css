@@ -27,26 +27,26 @@
 }
 
 .menuInicio{
-    top: 10%;
+    top: 4%;
     left: 60%;
-
+    /*position: fixed;*/
 }
 
 .ImagenInicio{
-    top: 10%;
+    top: 5%;
     left: 10%;
+    max-width: 400px;
 }
 
-.menuLista{
-    background-color: transparent;
+#logoMenu{
+    display: none;
+    width: 100%;
 }
 
 .menu{
     /*background-color: transparent;*/
-    background-color: rgba(180, 180, 180, 0.5);
-}
-.menuItem{
-    border-color: transparent;
+    background-color: rgba(90, 90, 90, 0.5);
+    margin-left: 0;
 }
 
 p {
