@@ -22,6 +22,34 @@ function makeOriginal(img){
 
 
 
+
+//Jes6
+
+
+
+//Aqui hay 3 metodos de acceso al DOM, en index.js está getElementByClassName
+
+//RECORDATORIO: EL DE getElementByName tiene que ser con algo de formulario
+
+
+//El método JQuery es una combinación junto con un método de acceso al DOM
+$(document).ready(function(){
+    var piePagina= document.getElementsByTagName("footer")[0];
+    $(piePagina).css("background-color", "black");
+});
+
+const rellenarTexto= texto => "ACTIVIDADES";
+const elementoH2 = document.createElement("h2");
+elementoH2.innerText = rellenarTexto();
+
+$(document).ready(function(){
+    const seccion = document.getElementById("actividades");
+
+    document.getElementById("actividades").insertBefore(elementoH2,seccion.firstChild); 
+
+});
+
+
 function mostrarFigura(idFiguras, idBotonClick) {
     let figura = document.getElementById(idFiguras);
     let funcionoIf = false;
