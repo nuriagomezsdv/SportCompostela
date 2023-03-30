@@ -13,6 +13,10 @@
     object-fit: cover;
 }
 
+.inicio > img{
+    min-height: 180px;
+}
+
 .textoInicio{
     position: absolute; /*posicion abosluta con respecto al contenedor*/
     color: white;
@@ -33,11 +37,9 @@
 }
 
 .ImagenInicio{
-
    /* max-width: calc(300px + 2vw);*/
     max-width: 50%;
     height: auto;
-
 }
 
 .logoInicio{
