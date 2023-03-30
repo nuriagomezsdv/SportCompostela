@@ -86,7 +86,7 @@ function cambiarColor(){
 }
 
 $(document).ready(function(){
-    cambiarMenuSegunTamanho(); 
+    cambiarMenuSegunTamanho();
 
 });
 
