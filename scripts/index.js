@@ -1,4 +1,6 @@
 
+
+
 window.addEventListener('scroll', function() {
     const items = document.getElementsByClassName('menuItem');
     let elemento_listaImagen = document.getElementById("logoMenu");
