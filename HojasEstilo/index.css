@@ -57,11 +57,12 @@ p {
     position: relative;
     max-width: 657px;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 0px;
     overflow: hidden;
 }
 .container-slide img{
     max-width: 100%;
+    border-radius: 0;
 }
 
 .slide{

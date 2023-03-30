@@ -202,7 +202,7 @@ img{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-width: 700px;
+    margin: 30px
 
 }
 
@@ -235,18 +235,14 @@ img{
     }
     .cajaTexto{
         padding-left: 20px;
+        max-width: 100%;
+    }
+    .cajaImagen{
+        max-width: 100%;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .cuadriculaflex {
-        justify-content: left;
-        align-items: flex-start;
-        align-self: flex-start;
-        align-content: flex-start;
-        min-width: 900px;
-    }
-}
+
 
 .letraEspecial{
     font-family: Protomolecule;
@@ -410,6 +406,11 @@ footer .cajaImagen{
 
 
 /*Fin de Menu principal*/
+
+.sombreado{
+    background-color: #ffffff; /* Color de fondo */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra */
+}
 
 
 
