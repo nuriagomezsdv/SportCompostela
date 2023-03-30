@@ -10,32 +10,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shorcut icon" href="../Imagenes/pesa.jpg">
     <link rel="stylesheet" href="../HojasEstilo/index.css">
+    <script type="text/javascript" src="../scripts/jquery.js"></script>
     <script src="../scripts/index.js"></script>
+    <script src="../scripts/general.js"></script>
 </head>
 <body>
 
-<nav id="menuFijo"></nav>
+<header>
+    <nav id="menuFijo"></nav>
 
-<main>
+
     <figure class="inicio">
         <img src="../Imagenes/gimnasio.jpg" alt="Gimnasio SportCompostela">
         <h class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</h>
         <div class="menuInicio textoInicio">
-        <div class="menu">
-            <ul class="menuLista">
-                <li id="logoMenu" class="menuItem"><a class="refMenu" href="index.html"> </a></li>
-                <li class="menuItem"><a class="refMenu" href="fitness.html"> FITNESS </a></li>
-                <li class="menuItem"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a></li>
-                <li class="menuItem"><a class="refMenu" href="personal.html"> PERSONAL</a></li>
-                <li class="menuItem"><a class="refMenu" href="cuotas.html"> CUOTAS</a></li>
-                <li class="menuItem"><a class="refMenu" href="contacto.html"> CONTACTO</a></li>
-            </ul>
-        </div>
+            <div class="menu">
+                <ul class="menuLista">
+                    <li id="logoMenu" class="menuItem"><a class="refMenu" href="index.html"> </a></li>
+                    <li class="menuItem" id="Fitness"><a class="refMenu" href="fitness.html"> FITNESS </a></li>
+                    <li class="menuItem" id="Nutricion"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a></li>
+                    <li class="menuItem" id="Personal"><a class="refMenu" href="personal.html"> PERSONAL</a></li>
+                    <li class="menuItem" id="Cuotas"><a class="refMenu" href="cuotas.html"> CUOTAS</a></li>
+                    <li class="menuItem" id="Contacto"><a class="refMenu" href="contacto.html"> CONTACTO</a></li>
+                </ul>
+            </div>
         </div>
         <figure class="textoInicio logoInicio">
             <a href="index.html"> <img src="../Imagenes/Logo-menu.png" class="ImagenInicio" alt="Gimnasio SportCompostela" width=50% height=50%> </a>
         </figure>
     </figure>
+    
+    </header>
+
 
     <div class="cuadriculaflex">
         <div class="cajaImagen">
@@ -73,7 +79,13 @@
 
     </div>
 
-    <div class="cuadriculaflex">
+
+
+
+<main>
+
+    <div class="cuadriculaflex Transicion" id="Inicio1">
+
         <div class="cajaTexto">
             <p>
                 <span class="colorVerdeResaltado"> ☆ </span> <span class="letraEspecial"> CONOCE EL MÉTODO <span
@@ -94,7 +106,7 @@
         </figure>
     </div>
 
-    <div class="cuadriculaflex">
+    <div class="cuadriculaflex Transicion" id="Inicio2">
         <figure class="cajaImagen">
             <a href="../Imagenes/salaMaquinas.jpg "><img src="../Imagenes/salaMaquinas.jpg "
                                                          onload="makeOriginal(this)"
@@ -122,7 +134,7 @@
     </div>
 
 
-    <div class="cuadriculaflex">
+    <div class="cuadriculaflex Transicion" id="Inicio3">
         <div class="cajaTexto">
             <p>
                 <span class="colorVerdeResaltado"> &#10143  </span> <span
@@ -150,7 +162,7 @@
     </div>
 
 
-    <div class="cuadriculaflex">
+    <div class="cuadriculaflex Transicion" id="Inicio4">
         <figure class="cajaImagen">
             <a href="../Imagenes/Nutricionista.jpg "><img src="../Imagenes/Nutricionista.jpg "
                                                           onload="makeOriginal(this)"
@@ -175,7 +187,7 @@
         </div>
     </div>
 
-    <div class="cuadriculaflex">
+    <div class="cuadriculaflex Transicion" id="Inicio5">
 
         <div class="cajaTexto cajaTextoDerecha">
             <p>
@@ -197,22 +209,11 @@
         </figure>
     </div>
 
-    <section id="contacto">
-        <h2>CONTÁCTANOS</h2>
-        <p> Puedes contactar con nosotros a través de nuestro correo electrónico, <a
-                href="mailto:info@sportCompostela.com?subject=Solicitud de información&body=Hola,%0D%0A%0D%0AMe gustaría obtener más información sobre sus servicios.%0D%0A%0D%0AAtentamente,">info@sportCompostela.com</a>
 
-            , o llamando al teléfono 981 123 456. <br>
-            Si lo prefieres, acercate a nuestras instalaciones en la <a
-                    href="https://www.google.com/maps/place/R%C3%BAa+de+Santiago+del+Estero,+1,+15701+Santiago+de+Compostela,+A+Coru%C3%B1a/data=!4m2!3m1!1s0xd2efe3ffde684c7:0x9b5663500f280bc2?sa=X&ved=2ahUKEwj9rp_-3tT9AhXvMuwKHcZZAeAQ8gF6BAgVEAI"
-                    target="_blank">Calle Santiago del Estero, 1, 15702 Santiago de Compostela</a>.
-            También puedes rellenar el formulario presente en <a href="contacto.html">CONTACTO</a> y nos pondremos en
-            contacto contigo lo antes posible!!
-        </p>
-    </section>
 
 </main>
 </body>
+
 
 
 <footer>
@@ -229,8 +230,14 @@
         <p class="cajaTexto"> <a href="contacto.html"> CONTACTO</a> &nbsp | &nbsp
 
             <a
-                    href="mailto:info@sportCompostela.com?subject=Solicitud de información&body=Hola,%0D%0A%0D%0AMe gustaría obtener más información sobre sus servicios.%0D%0A%0D%0AAtentamente,"> INFO@SPORTCOMPOSTELA.COM</a></p>
+                    href="mailto:info@sportCompostela.com?subject=Solicitud de información&body=Hola,%0D%0A%0D%0AMe gustaría obtener más información sobre sus servicios.%0D%0A%0D%0AAtentamente,"> INFO@SPORTCOMPOSTELA.COM</a>
+            &nbsp | &nbsp TLFN:  981 123 456 </p>
 
+        <p class="cajaTexto">
+            <a
+                    href="https://www.google.com/maps/place/R%C3%BAa+de+Santiago+del+Estero,+1,+15701+Santiago+de+Compostela,+A+Coru%C3%B1a/data=!4m2!3m1!1s0xd2efe3ffde684c7:0x9b5663500f280bc2?sa=X&ved=2ahUKEwj9rp_-3tT9AhXvMuwKHcZZAeAQ8gF6BAgVEAI"
+                    target="_blank">CALLE SANTAIGO DEL ESTERO, 1, <br> 15701 SANTIAGO DE COMPOSTELA (A CORUÑA)</a>.
+        </p>
         <figure class="cajaImagen">
             <img class="imagenPequeña" src="../Imagenes/Insta.png" alt="Instagram">
             <p> @SPORTCOMPOSTELA</p>
@@ -238,8 +245,8 @@
 
     </div>
 
-    <p class="cajaTexto">&copy 2023 SPORTCOMPOSTELA | DESARROLLADO POR NURFER | CENTRO DE DEPORTE Y SALUD EN SANTIAGO DE
-        COMPOSTELA</p>
+
+
 
 
 </footer>
