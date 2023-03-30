@@ -203,6 +203,13 @@ img{
     flex-wrap: wrap;
     justify-content: space-around;
     min-width: 700px;
+
+}
+
+.Transicion{
+    opacity: 0;
+    transform: translateY(50px); /* Lo movemos hacia abajo 50px */
+    transition: opacity 1.5s, transform 2s;
 }
 
 .cajaTexto {
@@ -330,6 +337,8 @@ footer .cajaImagen{
 
 
 /*Fin de pie de pagina*/
+
+
 
 
 

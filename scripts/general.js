@@ -19,6 +19,47 @@ function makeOriginal(img){
     img.style.filter = "none";
 
 }
+let tablaHash = {};
+
+
+$(document).ready(function(){
+    let elementos = $(".Transicion");
+
+    for (let i = 0; i < elementos.length; i++) {
+
+        tablaHash[elementos[i].id] = false;
+    }
+
+    window.addEventListener('scroll', function() {
+
+        for(let i = 0; i < elementos.length; i++) {
+            // Verificamos si el div está visible en la ventana
+
+            let element = elementos [i];
+            let position = element.getBoundingClientRect();
+
+
+            if( position.top < window.innerHeight && position.bottom > 300){
+
+                if(!tablaHash[element.id]) { // Verificamos si ya se ha animado el div
+
+                    element.style.opacity = 1.5; // Mostramos el div con animación
+                    element.style.transform = 'translateY(0)'; // Movemos el div hacia arriba con animación
+                    tablaHash[element.id] = true; // Actualizamos la variable de control
+                }
+            }
+
+
+        }
+
+
+    });
+
+
+});
+
+
+
 
 
 

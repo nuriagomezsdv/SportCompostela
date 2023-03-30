@@ -1,5 +1,6 @@
 
 
+
 function insertarMenu(id)
 {   id.style.right = "0px";
     id.style.left = "0px";
@@ -16,6 +17,7 @@ function insertarMenu(id)
         "        </ul>\n" +
         "    </div>";
 }
+
 
 window.addEventListener('scroll', function() {
     let menuFijo = document.getElementById("menuFijo");
