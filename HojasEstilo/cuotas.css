@@ -2,19 +2,37 @@
 
 
 #SeccionCuotas .cajaTexto{
-
-    width: 20%;
+    max-width: 20%;
     padding: 10px;
-    min-height: 380px;
     border-radius: 20px;
     background: #EBE4E4;
-}
-
-#SeccionCuotas .cuadriculaflex{
-    min-height: 400px;
+    width: 368px;
+    min-width: 368px;
+    height: 321px;
 }
 
 #SeccionCuotas p{
     text-align: center;
     padding: 20px;
+}
+.textoIndicativo{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1250px) {
+    #SeccionCuotas .cuadriculaflex {
+        flex-direction: column;
+        align-content: center;
+    }
+    #SeccionCuotas .cajaTexto {
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #SeccionCuotas .cajaTexto {
+        max-width: 100%;
+        margin-top: 30px;
+    }
 }

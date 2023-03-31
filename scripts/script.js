@@ -95,7 +95,7 @@ function realizarAparcion(){
 
             if(!tablaHash[element.id]) { // Verificamos si ya se ha animado el div
 
-                element.style.opacity = 1.5; // Mostramos el div con animación
+                element.style.opacity = "1.5"; // Mostramos el div con animación
                 element.style.transform = 'translateY(0)'; // Movemos el div hacia arriba con animación
                 tablaHash[element.id] = true; // Actualizamos la variable de control
             }
@@ -209,7 +209,7 @@ function cambiarMenuSegunTamanho(){
         menuFijo.style.zIndex = "100";
         menuImagen.style.display = "none";
         menuFijo.style.backgroundColor = "rgba(90, 90, 90, 0.5)";
-
+        logoInicio.style.display = "none";
         textoInicio.style.display = "none";
 
     }else if(window.innerWidth > 1260) {
@@ -222,30 +222,16 @@ function cambiarMenuSegunTamanho(){
 
 //Fin de funciones para el menu
 
-
-
-
-
-
-
-
-
-
-
-
-//Aqui hay 3 metodos de acceso al DOM, en index.js está getElementByClassName
-
-//RECORDATORIO: EL DE getElementByName tiene que ser con algo de formulario
-
+//Aqui hay 3 metodos de acceso al DOM
 
 //El método JQuery es una combinación junto con un método de acceso al DOM
 $(document).ready(function(){
-    var piePagina= document.getElementsByTagName("footer")[0];
+    let piePagina= document.getElementsByTagName("footer")[0];
     $(piePagina).css("background-color", "black");
 });
 
 //Jes6
-const rellenarTexto= texto => "ACTIVIDADES";
+rellenarTexto = () => "ACTIVIDADES";
 const elementoH2 = document.createElement("h2");
 elementoH2.innerText = rellenarTexto();
 
@@ -287,5 +273,56 @@ function mostrarFigura(idFiguras, idBotonClick) {
         otrasFiguras[i].style.display = "none";
     }
 
-
 }
+
+// Funcion para detectar si el email es correcto
+function validarEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Funcion para detectar si el telefono es correcto
+function validarTelefono(telefono) {
+    const numTelef = /^\d{9}$/;
+    return numTelef.test(telefono);
+}
+
+// Listener para el boton de enviar del formulario
+// Listener para el evento submit del formulario
+$(document).ready(function(){
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // evita que el formulario se envíe automáticamente
+
+        let nombre = document.getElementsByName("nombre")[0].value;
+        let apellidos = document.getElementsByName("apellidos")[0].value;
+        let email = document.getElementsByName("mail")[0].value;
+        let telefono = document.getElementsByName("telefono")[0].value;
+
+        if (nombre === "" || email === "" || telefono === "" || apellidos === "") {
+            alert("Hay campos vacios que son necesarios");
+        } else if (!validarEmail(email)) {
+            alert("El email no es correcto.");
+        } else if (!validarTelefono(telefono)) {
+            alert("El número teléfono no es correcto.");
+        } else {
+            alert("Enviado correctamente.\nTe contactaremos lo antes posible!");
+            this.submit(); // envía el formulario
+        }
+    });
+});
+
+// Introduccion de datos de un fichero JSON
+// El fichero JSON contiene las actividades que se muestran en la pagina
+$(document).ready(function(){
+
+});
+
+// Introduccion de datos de un fichero XML
+// El fichero XML contiene el personal que trabaja en la empresa
+$(document).ready(function(){
+
+});
+
+
+
+
