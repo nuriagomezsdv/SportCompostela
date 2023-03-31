@@ -1,12 +1,5 @@
 @import "general.css";
 
-
-
-
-p {
-    max-width: 600px;
-}
-
 .listaInicial{
     display: flex;
     flex-direction: column;
@@ -26,10 +19,9 @@ p {
     font-family: Protomolecule;
     font-size: 25px;
     margin-bottom: 20px;
-
 }
 
-.cajaImagen{
+main .cajaImagen{
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -38,14 +30,11 @@ p {
     width: 130px;
 }
 
-.cajaTextoDerecha{
-    padding: 0
-}
 .colorVerde{
     font-family: Protomolecule;
 }
 
-.cajaTexto{
+main .cajaTexto{
     text-align: left;
 }
 
@@ -169,6 +158,4 @@ input[id="3"]:checked ~ .slide{
     }
 
 }
-
-
 

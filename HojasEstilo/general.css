@@ -202,7 +202,7 @@ img{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 30px
+    margin: 30px;
 
 }
 
@@ -220,6 +220,10 @@ img{
     padding-left: 70px;
 }
 
+.cajaTextoDerecha{
+    padding: 0
+}
+
 .cajaImagen{
     max-width: 40%;
     align-self: center;
@@ -228,21 +232,6 @@ img{
     font-size: 25px;
     margin-top:0;
 }
-
-@media screen and (max-width: 1100px) {
-    .cuadriculaflex {
-        flex-direction: column;
-    }
-    .cajaTexto{
-        padding-left: 20px;
-        max-width: 100%;
-    }
-    .cajaImagen{
-        max-width: 100%;
-    }
-}
-
-
 
 .letraEspecial{
     font-family: Protomolecule;
@@ -282,17 +271,16 @@ img{
 
 /*Para el pie de pagina*/
 
-
-.imagenGrande{
-    max-width: 18%;
-    width: 8%;
-    margin: 20px;
+footer .cajaImagen{
+    max-width: 12%;
+    object-fit: cover;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 
-.imagenPequeña{
-    width: 7%;
-    margin: 10px;
-    margin-right: 20px;
+footer .cajaImagen img{
+    max-width: 100%;
 }
 
 footer .cajaTexto{
@@ -300,13 +288,13 @@ footer .cajaTexto{
     max-width: 50%;
     display: flex;
     justify-content: left;
-    font-size: 17px;
     font-family: Protomolecule;
+    font-size:17px;
+    margin: 0;
 }
 
 footer{
-    margin-top: 40px;
-    /*background: black;*/
+    padding-top: 10px;
     color: white;
 }
 
@@ -317,15 +305,30 @@ footer img{
 .fondoVerdeFoot{
     background: #b2d8b2;
     color: black;
+    margin:0;
 }
 
-footer .cajaImagen{
-    font-size: 17px;
+.fondoVerdeFoot .cajaTexto{
     max-width: 40%;
+    font-size:17px;
+}
+
+.fondoVerdeFoot .cajaImagen{
+    max-width: 15%;
+    object-fit: cover;
+    font-size:17px;
+    margin: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
-    font-family: Protomolecule;
+    justify-items: center;
+    padding-right: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.fondoVerdeFoot .cajaImagen img{
+    max-width: 20%;
 }
 
 
@@ -410,6 +413,52 @@ footer .cajaImagen{
 .sombreado{
     background-color: #ffffff; /* Color de fondo */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra */
+}
+
+@media screen and (max-width: 1100px) {
+    .cuadriculaflex {
+        flex-direction: column;
+    }
+    main .cajaTexto{
+        padding-left: 20px;
+        max-width: 100%;
+    }
+    main .cajaTextoDerecha{
+        padding-left: 20px;
+        max-width: 100%;
+    }
+    main .cajaImagen{
+        max-width: 100%;
+    }
+    footer{
+        padding-top: 0px;
+    }
+    footer .cajaTexto{
+        max-width: 100%;
+        text-align: center;
+        margin : 10px;
+    }
+    footer .cajaImagen{
+        max-width: 30%;
+        margin : 10px;
+    }
+    .fondoVerdeFoot .cajaImagen{
+        max-width: 100%;
+        margin : 10px;
+        font-size:calc(.7rem + 0.6vw);
+        flex-direction: row;
+    }
+    .fondoVerdeFoot .cajaImagen img{
+        max-width: 10%;
+        margin-right: 20px;
+    }
+    .fondoVerdeFoot .cajaTexto{
+        margin : 10px;
+        max-width: 100%;
+        font-size:calc(.7rem + 0.6vw);
+    }
+
+
 }
 
 
