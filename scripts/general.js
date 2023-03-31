@@ -1,4 +1,5 @@
 
+
 // Funciones para las imágenes
 function makeGray(img){
     img.style.color = "white";
@@ -12,7 +13,7 @@ function makeOriginal(img){
 }
 
 
-//Eventos
+//Eventos para poner las imagenes en gris
 $(document).ready(function (){
     let imagenes = document.querySelectorAll(" .cajaImagen img");
     for (let i = 0; i < imagenes.length; i++) {
@@ -28,6 +29,7 @@ $(document).ready(function (){
 
 });
 
+//Eventos para cambiar la imagen y texto que se visualiza, segun el boton pulsado
 $(document).ready(function (){
     let aux = document.querySelectorAll(" .refMenu");
     for (let i = 0; i < aux.length; i++) {
@@ -56,6 +58,7 @@ $(document).ready(function (){
 
 
 });
+
 
 
 
@@ -109,6 +112,7 @@ $(document).ready(function(){
 
 });
 
+//Funcion para cambiar el color de letra de los elementos de una lista
 function cambiarColor(){
     const listaElementos = document.querySelectorAll('ul.menuLista > li');
     listaElementos.forEach(elemento => {
@@ -119,12 +123,12 @@ function cambiarColor(){
     });
 }
 
+
 $(document).ready(function(){
     cambiarMenuSegunTamanho();
 
 });
 
-//Funcion para comprobar el tamaño de la pagina y que meta un menu u otro
 
 
 
@@ -181,6 +185,7 @@ window.addEventListener("resize", function() {
 
 });
 
+//Funcion para comprobar el tamaño de la pagina y que meta un menu u otro
 function cambiarMenuSegunTamanho(){
     let menuFijo = document.getElementById("menuFijo");
     //let menuImagen = document.getElementsByClassName("menu")[0];
@@ -225,7 +230,6 @@ function cambiarMenuSegunTamanho(){
 
 
 
-//Jes6
 
 
 
@@ -240,6 +244,7 @@ $(document).ready(function(){
     $(piePagina).css("background-color", "black");
 });
 
+//Jes6
 const rellenarTexto= texto => "ACTIVIDADES";
 const elementoH2 = document.createElement("h2");
 elementoH2.innerText = rellenarTexto();
