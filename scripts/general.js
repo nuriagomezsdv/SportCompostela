@@ -1,5 +1,5 @@
 
-
+// Funciones para las imágenes
 function makeGray(img){
     img.style.color = "white";
     img.style.opacity = "80%";
@@ -76,6 +76,7 @@ $(document).ready(function(){
 
 function realizarAparcion(){
     let elementos = $(".Transicion");
+
 
     for (let i = 0; i < elementos.length; i++) {
 
@@ -258,7 +259,7 @@ $(document).ready(function(){
 function mostrarFigura(idFiguras, idBotonClick) {
     let figura = document.getElementById(idFiguras);
     let funcionoIf = false;
-    let boton = document.getElementById(idBotonClick).children[0];
+    let boton = document.getElementById(idBotonClick);
     let botones = document.querySelectorAll('#MenuActividades li');
 
     for (let i = 0; i < botones.length; i++) {
