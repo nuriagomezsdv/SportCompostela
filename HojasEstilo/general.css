@@ -32,16 +32,6 @@ a {
     white-space: nowrap;
 }
 
-footer a{
-    text-decoration: none;
-    color: black;
-
-}
-
-footer a:hover{
-
-    text-decoration: underline;
-}
 
 
 figure img {
@@ -327,6 +317,25 @@ footer .cajaImagen{
     margin-top: 20px;
     font-family: Protomolecule;
 }
+
+footer a{
+    text-decoration: none;
+    color: black;
+
+}
+
+footer a:hover{
+
+    text-decoration: underline;
+}
+
+.decoracionEnlaces{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+
+}
+
 
 
 
