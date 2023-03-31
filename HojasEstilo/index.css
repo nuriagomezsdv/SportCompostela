@@ -46,8 +46,8 @@ main .cajaTexto{
     position: relative;
     max-width: 657px;
     width: 100%;
-    border-radius: 0px;
     overflow: hidden;
+    border-radius: 20px;
 }
 .container-slide img{
     max-width: 100%;

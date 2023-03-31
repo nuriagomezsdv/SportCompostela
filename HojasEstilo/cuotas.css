@@ -1,7 +1,7 @@
 @import "general.css";
 
 
-#cuotas .cajaTexto{
+#SeccionCuotas .cajaTexto{
 
     width: 20%;
     padding: 10px;
@@ -10,11 +10,11 @@
     background: #EBE4E4;
 }
 
-#cuotas .cuadriculaflex{
+#SeccionCuotas .cuadriculaflex{
     min-height: 400px;
 }
 
-#cuotas p{
+#SeccionCuotas p{
     text-align: center;
     padding: 20px;
 }
