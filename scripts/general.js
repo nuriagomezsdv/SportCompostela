@@ -19,12 +19,62 @@ function makeOriginal(img){
     img.style.filter = "none";
 
 }
+
+
+//Eventos
+$(document).ready(function (){
+    let imagenes = document.querySelectorAll(" .cajaImagen img");
+    for (let i = 0; i < imagenes.length; i++) {
+        // Ejemplo: cambiar el ancho de cada imagen
+        imagenes[i].addEventListener("mouseover", function() {
+            makeGray(this);
+        });
+        imagenes[i].addEventListener("mouseout", function() {
+            makeOriginal(this);
+        });
+    }
+
+
+});
+
+$(document).ready(function (){
+    let aux = document.querySelectorAll(" .refMenu");
+    for (let i = 0; i < aux.length; i++) {
+        // Ejemplo: cambiar el ancho de cada imagen
+        aux[i].addEventListener("click", function() {
+            //Dependiendo de cual sea el pulsado, se llema a unas funciones u otras
+            console.log(aux[i].id)
+            if(aux[i].id==="botonFuncional"){
+                mostrarFigura("Funcional",aux[i].id);
+            }
+            else if(aux[i].id==="botonYoga"){
+                mostrarFigura("Yoga",aux[i].id);
+            }
+            else if(aux[i].id==="botonBCombat"){
+                mostrarFigura("BodyCombact",aux[i].id);
+            }
+            else if(aux[i].id==="botonSpinning"){
+                mostrarFigura("Spinning",aux[i].id);
+            }
+            else if(aux[i].id==="botonAquagym"){
+                mostrarFigura("AquaGym",aux[i].id);
+            }
+        });
+
+    }
+
+
+});
+
+
+
+
 let tablaHash = {};
-
-
+//Funcion para realizar un efecto visual en los elementos de las paginas
 $(document).ready(function(){
 
-    realizarAparcion(); 
+    realizarAparcion();
+
     window.addEventListener('scroll', function() {
         realizarAparcion();
 
@@ -35,6 +85,7 @@ $(document).ready(function(){
 
 function realizarAparcion(){
     let elementos = $(".Transicion");
+
 
     for (let i = 0; i < elementos.length; i++) {
 
@@ -60,17 +111,7 @@ function realizarAparcion(){
     }
 }
 
-//Funciones para el Menu
 
-/*
-function ponerFondoColor(){
-    if(window.location.href==="fitness.html"){
-        let elem = document.getElementsByClassName(".menuLista")[0];
-        console.log(elem.id);
-        //elem.style.backgroundColor = "#b2d8b2";
-    }
-}
-*/
 
 $(document).ready(function(){
     cambiarColor();
@@ -227,7 +268,7 @@ $(document).ready(function(){
 function mostrarFigura(idFiguras, idBotonClick) {
     let figura = document.getElementById(idFiguras);
     let funcionoIf = false;
-    let boton = document.getElementById(idBotonClick).children[0];
+    let boton = document.getElementById(idBotonClick);
     let botones = document.querySelectorAll('#MenuActividades li');
 
     for (let i = 0; i < botones.length; i++) {
