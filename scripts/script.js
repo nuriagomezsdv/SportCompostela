@@ -182,14 +182,13 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener("resize", function() {
     cambiarMenuSegunTamanho();
+    cambiarColor();
 
 });
 
 //Funcion para comprobar el tamaño de la pagina y que meta un menu u otro
 function cambiarMenuSegunTamanho(){
     let menuFijo = document.getElementById("menuFijo");
-    //let menuImagen = document.getElementsByClassName("menu")[0];
-    //let inicio = document.getElementsByClassName("inicio")[0];
     let textoInicio = document.getElementsByClassName("textoInicio")[0];
     let logoInicio = document.getElementsByClassName("logoInicio")[0];
     let menuImagen = document.getElementsByClassName("menu")[0];

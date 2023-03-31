@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 1330px){
-    .subMenuLista{
+    .menuLista{
         flex-wrap: wrap;
     }
     .subMenuItem{

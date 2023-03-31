@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 1230px){
-    .subMenuLista{
+    .menuLista{
         flex-wrap: wrap;
     }
     .subMenuItem{
@@ -20,7 +20,7 @@
     display: none;
 }
 
-#MenuActividades .subMenuLista{
+#MenuActividades .menuLista{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
