@@ -11,7 +11,7 @@
     <link rel="shorcut icon" href="../Imagenes/pesa.jpg">
     <link rel="stylesheet" href="../HojasEstilo/index.css">
     <script type="text/javascript" src="../scripts/jquery.js"></script>
-    <script src="../scripts/general.js"></script>
+    <script src="../scripts/script.js"></script>
 </head>
 <body>
 
@@ -21,13 +21,13 @@
 
     <figure class="inicio">
         <img src="../Imagenes/gimnasio.jpg" alt="Gimnasio SportCompostela">
-        <p class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</p>
+        <h1 class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</h1>
         <div class="menuInicio textoInicio">
             <div class="menu">
                 <ul class="menuLista">
                     <li id="logoMenu" class="menuItem"><a class="refMenu" href="index.html"> </a></li>
                     <li class="menuItem" id="Fitness"><a class="refMenu" href="fitness.html"> FITNESS </a></li>
-                    <li class="menuItem" id="Nutricion"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a></li>
+                    <li class="menuItem" id="Nutricion"><a class="refMenu" href="nutricion.html"> NUTRICIÓN </a></li>
                     <li class="menuItem" id="Personal"><a class="refMenu" href="personal.html"> PERSONAL</a></li>
                     <li class="menuItem" id="Cuotas"><a class="refMenu" href="cuotas.html"> CUOTAS</a></li>
                     <li class="menuItem" id="Contacto"><a class="refMenu" href="contacto.html"> CONTACTO</a></li>
@@ -35,20 +35,11 @@
             </div>
         </div>
         <figure class="textoInicio logoInicio">
-            <a href="index.html"> <img src="../Imagenes/Logo-menu.png" class="ImagenInicio" alt="Gimnasio SportCompostela" > </a>
+            <a href="index.html"> <img src="../Imagenes/Logo-menu.png" class="ImagenInicio" alt="Gimnasio SportCompostela"> </a>
         </figure>
     </figure>
     
     </header>
-
-
-    <div class="cuadriculaflex">
-
-
-    </div>
-
-
-
 
 <main>
 
@@ -67,7 +58,9 @@
         </div>
         <figure class="cajaImagen">
             <a href="../Imagenes/imagen_index1.jpg "><img src="../Imagenes/imagen_index1.jpg "
-
+                                                          onload="makeOriginal(this)"
+                                                          onmouseover="makeGray(this)"
+                                                          onmouseout="makeOriginal(this)"
                                                           alt="Sala de maquinas funcionales"></a>
         </figure>
     </div>
