@@ -40,6 +40,7 @@
 #GeneracionMenus .cajaTexto{
     padding: 0;
     margin-right: 30px;
+    max-width: 60%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -47,6 +48,30 @@
         max-width: 100%;
         margin-top: 30px;
         margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #GeneracionMenus .cuadriculaflex {
+        flex-direction: column;
+    }
+    #GeneracionMenus .cajaTexto {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    #GeneracionMenus .cajaImagen {
+        max-width: 100%;
+    }
+
+    #NutricionDeportiva .cuadriculaflex {
+        flex-direction: column;
+    }
+    #NutricionDeportiva .cajaTexto {
+        max-width: 100%;
+        margin: 20px;
+    }
+    #NutricionDeportiva .cajaImagen {
+        max-width: 100%;
     }
 }
 

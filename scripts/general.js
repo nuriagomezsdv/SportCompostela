@@ -1,20 +1,9 @@
 
 
-function makeGrayAndBigger(img) {
-    img.style.filter = "grayscale(40%)";
-    img.classList.add("bigger");
-}
-
 function makeGray(img){
-    //img.style.filter = "grayscale(40%)";
     img.style.color = "white";
     img.style.opacity = "80%";
 
-}
-
-function makeOriginalAndNormal(img) {
-    img.style.filter = "none";
-    img.classList.remove("bigger");
 }
 
 function makeOriginal(img){
