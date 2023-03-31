@@ -1,1 +1,50 @@
 @import "general.css";
+
+.cuadricula4filas{
+    max-width: 25%;
+    display:flex;
+    flex-direction: column;
+}
+
+.cuadricula4filas div{
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    padding-right: 20px;
+    font-family: Protomolecule;
+}
+.cuadricula4filas img{
+    max-width: 20%;
+    margin: 20px;
+}
+
+.formulario{
+    font-weight: bold;
+    padding: 30px;
+}
+
+.formulario a{
+    wrap-option: wrap; /*NO VA*/
+}
+
+h1{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .cuadricula4filas{
+        max-height: 50%;
+        max-width: 100%;
+    }
+    .cajaTexto{
+        max-height: 50%;
+        max-width: 100%;
+    }
+    .cuadriculaflex{
+        justify-content: space-between;
+    }
+}
