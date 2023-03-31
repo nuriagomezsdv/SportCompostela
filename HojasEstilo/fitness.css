@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 1100px) {
     #entrenamientoPersonalizado .cajaTexto {
-        max-width: 40%;
+        max-width: 100%;
         margin-top: 30px;
         margin-left: 30px;
     }
