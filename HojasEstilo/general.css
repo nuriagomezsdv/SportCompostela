@@ -32,16 +32,6 @@ a {
     white-space: nowrap;
 }
 
-footer a{
-    text-decoration: none;
-    color: black;
-
-}
-
-footer a:hover{
-
-    text-decoration: underline;
-}
 
 
 figure img {
@@ -330,6 +320,25 @@ footer img{
 .fondoVerdeFoot .cajaImagen img{
     max-width: 20%;
 }
+
+footer a{
+    text-decoration: none;
+    color: black;
+
+}
+
+footer a:hover{
+
+    text-decoration: underline;
+}
+
+.decoracionEnlaces{
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+
+}
+
 
 
 
