@@ -7,13 +7,17 @@
     }
 }
 
-@media screen and (max-width: 1230px){
+@media screen and (max-width: 1330px){
     .subMenuLista{
         flex-wrap: wrap;
     }
     .subMenuItem{
         margin: 20px;
     }
+}
+
+.subMenuItem{
+    width: 50px;
 }
 
 #Seguimiento .cajaTexto{
@@ -45,3 +49,5 @@
         margin-left: 30px;
     }
 }
+
+

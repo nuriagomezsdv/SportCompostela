@@ -1,12 +1,14 @@
 
-
+// Funciones para las imagenes
 function makeGrayAndBigger(img) {
     img.style.filter = "grayscale(40%)";
     img.classList.add("bigger");
 }
 
 function makeGray(img){
-    img.style.filter = "grayscale(40%)";
+    //img.style.filter = "grayscale(40%)";
+    img.style.color = "white";
+    img.style.opacity = "80%";
 
 }
 
@@ -16,12 +18,12 @@ function makeOriginalAndNormal(img) {
 }
 
 function makeOriginal(img){
-    img.style.filter = "none";
+    img.style.opacity = "100%";
 
 }
+
+
 let tablaHash = {};
-
-
 $(document).ready(function(){
 
     realizarAparcion(); 
@@ -74,7 +76,6 @@ function ponerFondoColor(){
 
 $(document).ready(function(){
     cambiarColor();
-
 });
 
 function cambiarColor(){
@@ -91,12 +92,6 @@ $(document).ready(function(){
     cambiarMenuSegunTamanho();
 
 });
-
-//Funcion para comprobar el tamaño de la pagina y que meta un menu u otro
-
-
-
-
 
 function insertarMenu(id)
 {   id.style.right = "0px";
@@ -116,6 +111,7 @@ function insertarMenu(id)
 }
 
 
+// Añadimos un evento para que cuando se haga scroll se ejecute
 window.addEventListener('scroll', function() {
     let menuFijo = document.getElementById("menuFijo");
     let menuImagen = document.getElementsByClassName("menu")[0];
@@ -149,6 +145,7 @@ window.addEventListener("resize", function() {
 
 });
 
+//Funcion para comprobar el tamaño de la pagina y que meta un menu u otro
 function cambiarMenuSegunTamanho(){
     let menuFijo = document.getElementById("menuFijo");
     //let menuImagen = document.getElementsByClassName("menu")[0];

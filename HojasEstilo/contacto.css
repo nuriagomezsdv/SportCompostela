@@ -15,7 +15,7 @@
     text-align: center;
     align-items: center;
     padding-right: 20px;
-    font-family: Protomolecule;
+    font-family: Protomolecule,serif;
 }
 .cuadricula4filas img{
     max-width: 20%;
@@ -25,10 +25,7 @@
 .formulario{
     font-weight: bold;
     padding: 30px;
-}
-
-.formulario a{
-    wrap-option: wrap; /*NO VA*/
+    font-size: 16px;
 }
 
 h1{
@@ -47,4 +44,18 @@ h1{
     .cuadriculaflex{
         justify-content: space-between;
     }
+    .formulario{
+        font-size: calc(.7rem + 0.6vw);;
+    }
+}
+
+.btnenviar{
+    display: flex;
+    background-color: lightgray;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.btnenviar:hover{
+    background-color: #b2d8b2;
 }

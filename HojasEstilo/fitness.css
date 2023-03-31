@@ -42,7 +42,7 @@
     height: 50px;
     padding:5px 60px;
     background-color: lightgray;
-    font-family: Protomolecule;
+    font-family: Protomolecule, serif;
     cursor: pointer;
 
 }
@@ -61,7 +61,7 @@
 }
 .textoImagen{
     padding-top: 20px;
-    font-family: Serif;
+    font-family: serif;
     font-size: 25px;
     max-width: 520px;
 }

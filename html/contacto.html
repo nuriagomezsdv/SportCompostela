@@ -16,7 +16,7 @@
 
     <figure class="inicio">
         <img src="../Imagenes/gimnasio.jpg" alt="Gimnasio SportCompostela">
-        <h class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</h>
+        <h1 class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</h1>
         <div class="menuInicio textoInicio">
             <div class="menu">
                 <ul class="menuLista">
@@ -30,8 +30,7 @@
             </div>
         </div>
         <figure class="textoInicio logoInicio">
-            <a href="index.html"> <img src="../Imagenes/Logo-menu.png" class="ImagenInicio"
-                                       alt="Gimnasio SportCompostela" width=50% height=50%> </a>
+            <a href="index.html"> <img src="../Imagenes/Logo-menu.png" class="ImagenInicio" alt="Gimnasio SportCompostela"> </a>
         </figure>
     </figure>
 </header>
@@ -72,31 +71,53 @@
 
             <form action="#" method="post">
                 <div>
-                    CONTACTA CON NOSOTROS
+                    CONTACTA CON NOSOTROS <br> <br>
                 </div>
-                <p> Nombre</p>
-                <input type="text" name="nombre" required>
-                <p> Teléfono</p>
-                <input type="number" name="telefono" required>
-                <p> Correo</p>
-                <input type="email" name="mail" required>
-                <p> Comentarios</p>
-                <input type="text" name="comentarios">
+                <fieldset>
+                    <legend> Nombre completo</legend>
+                    <br>
+                    <label for="nombre"> Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <br> <br>
+                    <label for="apellidos"> Apellidos</label>
+                    <input type="text" name="nombre" id="apellidos" required>
+                    <br> <br>
+                </fieldset>
+                <fieldset>
+                    <legend> Datos de contacto</legend>
+                    <br>
+                    <label for="telef"> Número de teléfono</label>
+                    <input type="number" name="telefono" id="telef" required>
+                    <br> <br>
+                    <label for="correo"> Correo electrónico</label>
+                    <input type="email" name="mail" id="correo" required>
+                    <br> <br>
+                </fieldset>
+                <fieldset>
+                    <legend> Datos de la consulta</legend>
+                    <br>
+                    <label for="tipo"> Tipo de consulta</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="1"> Consulta general</option>
+                        <option value="2"> Consulta sobre cuotas</option>
+                        <option value="3"> Consulta sobre clases</option>
+                        <option value="4"> Consulta sobre entrenamiento personal</option>
+                        <option value="5"> Consulta sobre nutrición</option>
+                        <option value="6"> Otro</option>
+                    </select>
+                    <br> <br>
+                    <label for="comentarios"> Comentarios o dudas </label>
+                    <textarea  name="comentarios" id="comentarios"></textarea>
+                </fieldset>
                 <br>
-                <br>
+                <input type="checkbox" id="politica" required>
+                <label for="politica"> Acepto la <a href="#politica">política de privacidad</a></label>
+                <br> <br>
+                <input type="checkbox" id="notificaciones">
+                <label for="notificaciones"> Acepto recibir mensajes y notificaciones en el correo electrónico indicado.</label>
+                <br> <br>
+                <input class="btnenviar" type="submit" value="Enviar">
 
-                <input type="checkbox" required>
-                <p> Acepto los <a href="#politica">términos y condiciones de
-                    privacidad</a>
-                </p>
-                <input type="checkbox">
-                <p>
-                    Acepto recibir mensajes y notificaciones al correo indicado
-                </p>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
             </form>
 
         </div>
