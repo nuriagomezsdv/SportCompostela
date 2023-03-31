@@ -1,6 +1,5 @@
 
-
-// Funciones para las imágenes
+// Funciones para las imagenes
 function makeGray(img){
     img.style.color = "white";
     img.style.opacity = "80%";
@@ -13,7 +12,7 @@ function makeOriginal(img){
 }
 
 
-//Eventos para poner las imagenes en gris
+//Eventos
 $(document).ready(function (){
     let imagenes = document.querySelectorAll(" .cajaImagen img");
     for (let i = 0; i < imagenes.length; i++) {
@@ -29,7 +28,6 @@ $(document).ready(function (){
 
 });
 
-//Eventos para cambiar la imagen y texto que se visualiza, segun el boton pulsado
 $(document).ready(function (){
     let aux = document.querySelectorAll(" .refMenu");
     for (let i = 0; i < aux.length; i++) {
@@ -58,7 +56,6 @@ $(document).ready(function (){
 
 
 });
-
 
 
 
@@ -109,7 +106,6 @@ function realizarAparcion(){
 
 $(document).ready(function(){
     cambiarColor();
-
 });
 
 //Funcion para cambiar el color de letra de los elementos de una lista
@@ -123,16 +119,10 @@ function cambiarColor(){
     });
 }
 
-
 $(document).ready(function(){
     cambiarMenuSegunTamanho();
 
 });
-
-
-
-
-
 
 function insertarMenu(id)
 {   id.style.right = "0px";
@@ -152,6 +142,7 @@ function insertarMenu(id)
 }
 
 
+// Añadimos un evento para que cuando se haga scroll se ejecute
 window.addEventListener('scroll', function() {
     let menuFijo = document.getElementById("menuFijo");
     let menuImagen = document.getElementsByClassName("menu")[0];
