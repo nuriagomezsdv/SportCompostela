@@ -23,40 +23,42 @@ let tablaHash = {};
 
 
 $(document).ready(function(){
+
+    realizarAparcion(); 
+    window.addEventListener('scroll', function() {
+        realizarAparcion();
+
+    });
+
+
+});
+
+function realizarAparcion(){
     let elementos = $(".Transicion");
 
     for (let i = 0; i < elementos.length; i++) {
 
         tablaHash[elementos[i].id] = false;
     }
+    for(let i = 0; i < elementos.length; i++) {
+        // Verificamos si el div está visible en la ventana
 
-    window.addEventListener('scroll', function() {
+        let element = elementos [i];
+        let position = element.getBoundingClientRect();
 
-        for(let i = 0; i < elementos.length; i++) {
-            // Verificamos si el div está visible en la ventana
+        if( position.top < window.innerHeight && position.bottom > 300){
 
-            let element = elementos [i];
-            let position = element.getBoundingClientRect();
+            if(!tablaHash[element.id]) { // Verificamos si ya se ha animado el div
 
-
-            if( position.top < window.innerHeight && position.bottom > 300){
-
-                if(!tablaHash[element.id]) { // Verificamos si ya se ha animado el div
-
-                    element.style.opacity = 1.5; // Mostramos el div con animación
-                    element.style.transform = 'translateY(0)'; // Movemos el div hacia arriba con animación
-                    tablaHash[element.id] = true; // Actualizamos la variable de control
-                }
+                element.style.opacity = 1.5; // Mostramos el div con animación
+                element.style.transform = 'translateY(0)'; // Movemos el div hacia arriba con animación
+                tablaHash[element.id] = true; // Actualizamos la variable de control
             }
-
-
         }
 
 
-    });
-
-
-});
+    }
+}
 
 //Funciones para el Menu
 
@@ -165,6 +167,12 @@ function cambiarMenuSegunTamanho(){
         textoInicio.style.top = "60%";
 
     }else if(window.innerWidth < 800){
+        insertarMenu(menuFijo);
+        menuFijo.style.position = "fixed";
+        menuFijo.style.zIndex = "100";
+        menuImagen.style.display = "none";
+        menuFijo.style.backgroundColor = "rgba(90, 90, 90, 0.5)";
+
         textoInicio.style.display = "none";
 
     }else if(window.innerWidth > 1260) {
@@ -207,7 +215,11 @@ elementoH2.innerText = rellenarTexto();
 $(document).ready(function(){
     const seccion = document.getElementById("actividades");
 
-    document.getElementById("actividades").insertBefore(elementoH2,seccion.firstChild); 
+    if(document.getElementById("actividades")!=null){
+        document.getElementById("actividades").insertBefore(elementoH2,seccion.firstChild);
+
+    }
+
 
 });
 

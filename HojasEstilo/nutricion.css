@@ -1,7 +1,22 @@
 @import "general.css";
 
-#Seguimiento .cajaTexto{
+@media screen and (min-width: 1590px){
+    .subMenuItem{
+        margin: 0 calc(20px + 1vw);
 
+    }
+}
+
+@media screen and (max-width: 1230px){
+    .subMenuLista{
+        flex-wrap: wrap;
+    }
+    .subMenuItem{
+        margin: 20px;
+    }
+}
+
+#Seguimiento .cajaTexto{
     max-width: 20%;
     padding: 10px;
     min-height: 380px;
@@ -21,4 +36,12 @@
 #GeneracionMenus .cajaTexto{
     padding: 0;
     margin-right: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+    #Seguimiento .cajaTexto {
+        max-width: 100%;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
 }
