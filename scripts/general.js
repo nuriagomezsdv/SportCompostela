@@ -1,5 +1,5 @@
 
-// Funciones para las imagenes
+
 function makeGrayAndBigger(img) {
     img.style.filter = "grayscale(40%)";
     img.classList.add("bigger");
@@ -23,10 +23,60 @@ function makeOriginal(img){
 }
 
 
+//Eventos
+$(document).ready(function (){
+    let imagenes = document.querySelectorAll(" .cajaImagen img");
+    for (let i = 0; i < imagenes.length; i++) {
+        // Ejemplo: cambiar el ancho de cada imagen
+        imagenes[i].addEventListener("mouseover", function() {
+            makeGray(this);
+        });
+        imagenes[i].addEventListener("mouseout", function() {
+            makeOriginal(this);
+        });
+    }
+
+
+});
+
+$(document).ready(function (){
+    let aux = document.querySelectorAll(" .refMenu");
+    for (let i = 0; i < aux.length; i++) {
+        // Ejemplo: cambiar el ancho de cada imagen
+        aux[i].addEventListener("click", function() {
+            //Dependiendo de cual sea el pulsado, se llema a unas funciones u otras
+            console.log(aux[i].id)
+            if(aux[i].id==="botonFuncional"){
+                mostrarFigura("Funcional",aux[i].id);
+            }
+            else if(aux[i].id==="botonYoga"){
+                mostrarFigura("Yoga",aux[i].id);
+            }
+            else if(aux[i].id==="botonBCombat"){
+                mostrarFigura("BodyCombact",aux[i].id);
+            }
+            else if(aux[i].id==="botonSpinning"){
+                mostrarFigura("Spinning",aux[i].id);
+            }
+            else if(aux[i].id==="botonAquagym"){
+                mostrarFigura("AquaGym",aux[i].id);
+            }
+        });
+
+    }
+
+
+});
+
+
+
+
 let tablaHash = {};
+//Funcion para realizar un efecto visual en los elementos de las paginas
 $(document).ready(function(){
 
-    realizarAparcion(); 
+    realizarAparcion();
+
     window.addEventListener('scroll', function() {
         realizarAparcion();
 
@@ -62,20 +112,11 @@ function realizarAparcion(){
     }
 }
 
-//Funciones para el Menu
 
-/*
-function ponerFondoColor(){
-    if(window.location.href==="fitness.html"){
-        let elem = document.getElementsByClassName(".menuLista")[0];
-        console.log(elem.id);
-        //elem.style.backgroundColor = "#b2d8b2";
-    }
-}
-*/
 
 $(document).ready(function(){
     cambiarColor();
+
 });
 
 function cambiarColor(){
@@ -92,6 +133,12 @@ $(document).ready(function(){
     cambiarMenuSegunTamanho();
 
 });
+
+//Funcion para comprobar el tamaño de la pagina y que meta un menu u otro
+
+
+
+
 
 function insertarMenu(id)
 {   id.style.right = "0px";
@@ -111,7 +158,6 @@ function insertarMenu(id)
 }
 
 
-// Añadimos un evento para que cuando se haga scroll se ejecute
 window.addEventListener('scroll', function() {
     let menuFijo = document.getElementById("menuFijo");
     let menuImagen = document.getElementsByClassName("menu")[0];
@@ -145,7 +191,6 @@ window.addEventListener("resize", function() {
 
 });
 
-//Funcion para comprobar el tamaño de la pagina y que meta un menu u otro
 function cambiarMenuSegunTamanho(){
     let menuFijo = document.getElementById("menuFijo");
     //let menuImagen = document.getElementsByClassName("menu")[0];
