@@ -50,6 +50,7 @@
     #GeneracionMenus .cajaTexto {
         max-width: 100%;
         margin-bottom: 20px;
+        padding-left: 20px;
     }
     #GeneracionMenus .cajaImagen {
         max-width: 100%;
@@ -78,5 +79,8 @@
         max-width: 100%;
         margin-top: 30px;
         margin-left: 30px;
+    }
+    #EntrevistaPersonal .cajaTexto{
+        margin-right: 10px;
     }
 }
