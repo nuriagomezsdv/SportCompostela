@@ -6,7 +6,7 @@
     <link rel="shorcut icon" href="../Imagenes/pesa.jpg">
     <link rel="stylesheet" href="../HojasEstilo/contacto.css">
     <script type="text/javascript" src="../scripts/jquery.js"></script>
-    <script src="../scripts/general.js"></script>
+    <script src="../scripts/script.js"></script>
 
 </head>
 <body>
@@ -16,13 +16,13 @@
 
     <figure class="inicio">
         <img src="../Imagenes/gimnasio.jpg" alt="Gimnasio SportCompostela">
-        <p class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</p>
+        <h1 class="textoInicio"> ÚNETE AL MÉTODO SPORTCOMPOSTELA</h1>
         <div class="menuInicio textoInicio">
             <div class="menu">
                 <ul class="menuLista">
                     <li id="logoMenu" class="menuItem"><a class="refMenu" href="index.html"> </a></li>
                     <li class="menuItem" id="Fitness"><a class="refMenu" href="fitness.html"> FITNESS </a></li>
-                    <li class="menuItem" id="Nutricion"><a class="refMenu" href="nutricion.html"> NURTRICIÓN </a></li>
+                    <li class="menuItem" id="Nutricion"><a class="refMenu" href="nutricion.html"> NUTRICIÓN </a></li>
                     <li class="menuItem" id="Personal"><a class="refMenu" href="personal.html"> PERSONAL</a></li>
                     <li class="menuItem" id="Cuotas"><a class="refMenu" href="cuotas.html"> CUOTAS</a></li>
                     <li class="menuItem" id="Contacto"><a class="refMenu" href="contacto.html"> CONTACTO</a></li>
@@ -72,31 +72,52 @@
 
             <form action="#" method="post">
                 <div>
-                    CONTACTA CON NOSOTROS
+                    CONTACTA CON NOSOTROS <br> <br>
                 </div>
-                <p> Nombre</p>
-                <input type="text" name="nombre" required>
-                <p> Teléfono</p>
-                <input type="number" name="telefono" required>
-                <p> Correo</p>
-                <input type="email" name="mail" required>
-                <p> Comentarios</p>
-                <input type="text" name="comentarios">
+                <fieldset>
+                    <legend> Nombre completo</legend>
+                    <br>
+                    <label for="nombre"> Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <br> <br>
+                    <label for="apellidos"> Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" required>
+                    <br> <br>
+                </fieldset>
+                <fieldset>
+                    <legend> Datos de contacto</legend>
+                    <br>
+                    <label for="telef"> Número de teléfono</label>
+                    <input type="text" name="telefono" id="telef" required>
+                    <br> <br>
+                    <label for="correo"> Correo electrónico</label>
+                    <input type="text" name="mail" id="correo" required>
+                    <br> <br>
+                </fieldset>
+                <fieldset>
+                    <legend> Datos de la consulta</legend>
+                    <br>
+                    <label for="tipo"> Tipo de consulta</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="1"> Consulta general</option>
+                        <option value="2"> Consulta sobre cuotas</option>
+                        <option value="3"> Consulta sobre clases</option>
+                        <option value="4"> Consulta sobre entrenamiento personal</option>
+                        <option value="5"> Consulta sobre nutrición</option>
+                        <option value="6"> Otro</option>
+                    </select>
+                    <br> <br>
+                    <label for="comentarios"> Comentarios o dudas </label>
+                    <textarea  name="comentarios" id="comentarios"></textarea>
+                </fieldset>
                 <br>
-                <br>
-
-                <input type="checkbox" required>
-                <p> Acepto los <a href="#politica">términos y condiciones de
-                    privacidad</a>
-                </p>
-                <input type="checkbox">
-                <p>
-                    Acepto recibir mensajes y notificaciones al correo indicado
-                </p>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
+                <input type="checkbox" id="politica" required>
+                <label for="politica"> Acepto la <a href="#politica">política de privacidad</a></label>
+                <br> <br>
+                <input type="checkbox" id="notificaciones">
+                <label for="notificaciones"> Acepto recibir mensajes y notificaciones en el correo electrónico indicado.</label>
+                <br> <br>
+                <input class="btnenviar" type="submit" value="ENVIAR">
             </form>
 
         </div>
@@ -106,9 +127,11 @@
     <section id="ubicacion">
         <h1> ¿Cómo llegar a SportCompostela?</h1>
         <div class="cuadriculaflex">
+            <div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.925446395647!2d-8.552412584328094!3d42.874417710455276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe1555c3f603%3A0x424d7880da8d5fd!2sR%C3%BAa%20de%20Santiago%20del%20Estero%2C%2015701%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1676836331063!5m2!1ses!2ses"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
@@ -119,33 +142,38 @@
 
     <div class="cuadriculaflex">
 
-        <img class="cajaImagen imagenGrande" src="../Imagenes/Logo-menu.png" alt="Gimnasio SportCompostela">
+        <figure class="cajaImagen">
+            <img class="cajaImagen" src="../Imagenes/Logo-menu.png" alt="Gimnasio SportCompostela">
+        </figure>
+        <figure class="cajaImagen">
+            <img  class="cajaImagen" src="../Imagenes/Xunta.png" alt="Xunta Galicia" >
+        </figure>
 
-        <img class="cajaImagen imagenGrande" src="../Imagenes/Xunta.png" alt="Xunta Galicia">
-
-        <p class="cajaTexto">&copy 2023 SPORTCOMPOSTELA | DESARROLLADO POR NURFER | CENTRO DE DEPORTE Y SALUD EN
-            SANTIAGO DE COMPOSTELA</p>
+        <p class="cajaTexto"> &copy 2023 SPORTCOMPOSTELA | DESARROLLADO POR NURFER | CENTRO DE DEPORTE Y SALUD EN SANTIAGO DE COMPOSTELA</p>
     </div>
-    <div class="cuadriculaflex fondoVerdeFoot">
-        <p class="cajaTexto"><a href="contacto.html"> CONTACTO</a> &nbsp | &nbsp
 
-            <a
-                    href="mailto:info@sportCompostela.com?subject=Solicitud de información&body=Hola,%0D%0A%0D%0AMe gustaría obtener más información sobre sus servicios.%0D%0A%0D%0AAtentamente,">
-                INFO@SPORTCOMPOSTELA.COM</a>
-            &nbsp | &nbsp TLFN: 981 123 456 </p>
+    <div class="cuadriculaflex fondoVerdeFoot">
+        <p class="cajaTexto">
+            <a href="contacto.html"> CONTACTO</a>
+            &nbsp | &nbsp
+            <a href="mailto:info@sportCompostela.com?subject=Solicitud de información&body=Hola,%0D%0A%0D%0AMe gustaría obtener más información sobre sus servicios.%0D%0A%0D%0AAtentamente,"> INFO@SPORTCOMPOSTELA.COM</a>
+            &nbsp | &nbsp
+            TLFN:  981 123 456
+        </p>
 
         <p class="cajaTexto">
             <a
                     href="https://www.google.com/maps/place/R%C3%BAa+de+Santiago+del+Estero,+1,+15701+Santiago+de+Compostela,+A+Coru%C3%B1a/data=!4m2!3m1!1s0xd2efe3ffde684c7:0x9b5663500f280bc2?sa=X&ved=2ahUKEwj9rp_-3tT9AhXvMuwKHcZZAeAQ8gF6BAgVEAI"
-                    target="_blank">CALLE SANTAIGO DEL ESTERO, 1, <br> 15701 SANTIAGO DE COMPOSTELA (A CORUÑA)</a>.
+                    target="_blank">CALLE SANTAIGO DEL ESTERO, 1, <br>
+                15701 SANTIAGO DE COMPOSTELA (A CORUÑA)
+            </a>.
         </p>
         <figure class="cajaImagen">
-            <img class="imagenPequeña" src="../Imagenes/Insta.png" alt="Instagram">
+            <img src="../Imagenes/Insta.png" alt="Instagram">
             <p> @SPORTCOMPOSTELA</p>
         </figure>
 
     </div>
-
 
 </footer>
 </html>
