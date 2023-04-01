@@ -1,26 +1,25 @@
-
 // Funciones para las imagenes
-function makeGray(img){
+function makeGray(img) {
     img.style.color = "white";
     img.style.opacity = "80%";
 
 }
 
-function makeOriginal(img){
+function makeOriginal(img) {
     img.style.opacity = "100%";
 
 }
 
 
 //Eventos
-$(document).ready(function (){
+$(document).ready(function () {
     let imagenes = document.querySelectorAll(" .cajaImagen img");
     for (let i = 0; i < imagenes.length; i++) {
         // Ejemplo: cambiar el ancho de cada imagen
-        imagenes[i].addEventListener("mouseover", function() {
+        imagenes[i].addEventListener("mouseover", function () {
             makeGray(this);
         });
-        imagenes[i].addEventListener("mouseout", function() {
+        imagenes[i].addEventListener("mouseout", function () {
             makeOriginal(this);
         });
     }
@@ -28,27 +27,23 @@ $(document).ready(function (){
 
 });
 
-$(document).ready(function (){
+$(document).ready(function () {
     let aux = document.querySelectorAll(" .refMenu");
     for (let i = 0; i < aux.length; i++) {
         // Ejemplo: cambiar el ancho de cada imagen
-        aux[i].addEventListener("click", function() {
+        aux[i].addEventListener("click", function () {
             //Dependiendo de cual sea el pulsado, se llema a unas funciones u otras
             console.log(aux[i].id)
-            if(aux[i].id==="botonFuncional"){
-                mostrarFigura("Funcional",aux[i].id);
-            }
-            else if(aux[i].id==="botonYoga"){
-                mostrarFigura("Yoga",aux[i].id);
-            }
-            else if(aux[i].id==="botonBCombat"){
-                mostrarFigura("BodyCombact",aux[i].id);
-            }
-            else if(aux[i].id==="botonSpinning"){
-                mostrarFigura("Spinning",aux[i].id);
-            }
-            else if(aux[i].id==="botonAquagym"){
-                mostrarFigura("AquaGym",aux[i].id);
+            if (aux[i].id === "botonFuncional") {
+                mostrarFigura("Funcional", aux[i].id);
+            } else if (aux[i].id === "botonYoga") {
+                mostrarFigura("Yoga", aux[i].id);
+            } else if (aux[i].id === "botonBCombat") {
+                mostrarFigura("BodyCombact", aux[i].id);
+            } else if (aux[i].id === "botonSpinning") {
+                mostrarFigura("Spinning", aux[i].id);
+            } else if (aux[i].id === "botonAquagym") {
+                mostrarFigura("AquaGym", aux[i].id);
             }
         });
 
@@ -58,15 +53,13 @@ $(document).ready(function (){
 });
 
 
-
-
 let tablaHash = {};
 //Funcion para realizar un efecto visual en los elementos de las paginas
-$(document).ready(function(){
+$(document).ready(function () {
 
     realizarAparcion();
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         realizarAparcion();
 
     });
@@ -74,7 +67,7 @@ $(document).ready(function(){
 
 });
 
-function realizarAparcion(){
+function realizarAparcion() {
     let elementos = $(".Transicion");
 
 
@@ -82,15 +75,15 @@ function realizarAparcion(){
 
         tablaHash[elementos[i].id] = false;
     }
-    for(let i = 0; i < elementos.length; i++) {
+    for (let i = 0; i < elementos.length; i++) {
         // Verificamos si el div está visible en la ventana
 
         let element = elementos [i];
         let position = element.getBoundingClientRect();
 
-        if( position.top < window.innerHeight && position.bottom > 300){
+        if (position.top < window.innerHeight && position.bottom > 300) {
 
-            if(!tablaHash[element.id]) { // Verificamos si ya se ha animado el div
+            if (!tablaHash[element.id]) { // Verificamos si ya se ha animado el div
 
                 element.style.opacity = "1.5"; // Mostramos el div con animación
                 element.style.transform = 'translateY(0)'; // Movemos el div hacia arriba con animación
@@ -103,32 +96,31 @@ function realizarAparcion(){
 }
 
 
-
-$(document).ready(function(){
+$(document).ready(function () {
     cambiarColor();
 });
 
 //Funcion para cambiar el color de letra de los elementos de una lista
-function cambiarColor(){
+function cambiarColor() {
     const listaElementos = document.querySelectorAll('ul.menuLista > li');
     listaElementos.forEach(elemento => {
-        if(elemento.id===window.document.title){
+        if (elemento.id === window.document.title) {
             elemento.style.color = "#b2d8b2";
             elemento.style.fontSize = "30px"
         }
     });
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     cambiarMenuSegunTamanho();
 
 });
 
-function insertarMenu(id)
-{   id.style.right = "0px";
+function insertarMenu(id) {
+    id.style.right = "0px";
     id.style.left = "0px";
     id.style.backgroundColor = "black";
-    id.innerHTML=" <div class=\"menu\">\n" +
+    id.innerHTML = " <div class=\"menu\">\n" +
         "        <ul class=\"menuLista\">\n" +
         "            <li class=\"menuItem\" ><a class=\"refMenu\"  href=\"index.html\"><img src='../Imagenes/Logo-menu.png' alt='Gimnasio SportCompostela'></a> </li>\n" +
         "            <li class=\"menuItem\" id=\"Fitness\"'><a class=\"refMenu\" href=\"fitness.html\">\n" +
@@ -143,7 +135,7 @@ function insertarMenu(id)
 
 
 // Añadimos un evento para que cuando se haga scroll se ejecute
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     let menuFijo = document.getElementById("menuFijo");
     let menuImagen = document.getElementsByClassName("menu")[0];
     let textoInicio = document.getElementsByClassName("textoInicio")[0];
@@ -157,28 +149,28 @@ window.addEventListener('scroll', function() {
         menuImagen.style.display = "none";
 
         // Si el scroll es mayor que 100 cambiamos el color del menu fijo
-    }else if(window.scrollY < 100 && window.innerWidth > 1260) {
+    } else if (window.scrollY < 100 && window.innerWidth > 1260) {
         menuFijo.innerHTML = "";
         menuImagen.style.display = "flex";
-    }else if(window.scrollY < 100 && window.innerWidth <= 1260 && window.innerWidth > 800) {
+    } else if (window.scrollY < 100 && window.innerWidth <= 1260 && window.innerWidth > 800) {
         menuFijo.style.backgroundColor = "rgba(90, 90, 90, 0.5)";
         textoInicio.style.top = "60%";
         textoInicio.style.display = "inline-block";
-    }else if(window.scrollY < 100 && window.innerWidth < 800){
+    } else if (window.scrollY < 100 && window.innerWidth < 800) {
         menuFijo.style.backgroundColor = "rgba(90, 90, 90, 0.5)";
     }
 });
 
 // Añadimos un evento para que cuando la pantalla se haga pequeña se ejecute
 
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
     cambiarMenuSegunTamanho();
     cambiarColor();
 
 });
 
 //Funcion para comprobar el tamaño de la pagina y que meta un menu u otro
-function cambiarMenuSegunTamanho(){
+function cambiarMenuSegunTamanho() {
     let menuFijo = document.getElementById("menuFijo");
     let textoInicio = document.getElementsByClassName("textoInicio")[0];
     let logoInicio = document.getElementsByClassName("logoInicio")[0];
@@ -193,7 +185,7 @@ function cambiarMenuSegunTamanho(){
         menuImagen.style.display = "none";
         textoInicio.style.top = "60%";
 
-    }else if(window.innerWidth < 800){
+    } else if (window.innerWidth < 800) {
         insertarMenu(menuFijo);
         menuFijo.style.position = "fixed";
         menuFijo.style.zIndex = "100";
@@ -202,8 +194,8 @@ function cambiarMenuSegunTamanho(){
         logoInicio.style.display = "none";
         textoInicio.style.display = "none";
 
-    }else if(window.innerWidth > 1260) {
-        menuFijo.innerHTML="";
+    } else if (window.innerWidth > 1260) {
+        menuFijo.innerHTML = "";
         menuImagen.style.display = "flex";
         textoInicio.style.display = "inline-block";
         logoInicio.style.display = "inline-block";
@@ -211,12 +203,9 @@ function cambiarMenuSegunTamanho(){
 }
 
 //Fin de funciones para el menu
-
-//Aqui hay 3 metodos de acceso al DOM
-
 //El método JQuery es una combinación junto con un método de acceso al DOM
-$(document).ready(function(){
-    let piePagina= document.getElementsByTagName("footer")[0];
+$(document).ready(function () {
+    let piePagina = document.getElementsByTagName("footer")[0];
     $(piePagina).css("background-color", "black");
 });
 
@@ -225,14 +214,12 @@ rellenarTexto = () => "ACTIVIDADES";
 const elementoH2 = document.createElement("h2");
 elementoH2.innerText = rellenarTexto();
 
-$(document).ready(function(){
+$(document).ready(function () {
     const seccion = document.getElementById("actividades");
 
-    if(document.getElementById("actividades")!=null){
-        document.getElementById("actividades").insertBefore(elementoH2,seccion.firstChild);
-
+    if (document.getElementById("actividades") != null) {
+        document.getElementById("actividades").insertBefore(elementoH2, seccion.firstChild);
     }
-
 
 });
 
@@ -250,10 +237,10 @@ function mostrarFigura(idFiguras, idBotonClick) {
     if (figura.style.display === "none") {
         figura.style.display = "block";
         boton.style.backgroundColor = "#b2d8b2";
-        funcionoIf= true;
+        funcionoIf = true;
 
     }
-    if(funcionoIf===false){
+    if (funcionoIf === false) {
         figura.style.display = "block";
         boton.style.backgroundColor = "#b2d8b2";
     }
@@ -279,8 +266,8 @@ function validarTelefono(telefono) {
 
 // Listener para el boton de enviar del formulario
 // Listener para el evento submit del formulario
-$(document).ready(function(){
-    document.querySelector('form').addEventListener('submit', function(event) {
+$(document).ready(function () {
+    document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault(); // evita que el formulario se envíe automáticamente
 
         let nombre = document.getElementsByName("nombre")[0].value;
@@ -302,14 +289,30 @@ $(document).ready(function(){
 });
 
 // Introduccion de datos de un fichero JSON
-// El fichero JSON contiene las actividades que se muestran en la pagina
-$(document).ready(function(){
+// El fichero JSON contiene las diferentes cuotas del gimnasio
+$(document).ready(cargaCuotas);
 
-});
+function cargaCuotas() {
+    if(document.getElementById("cuotasGimnasio") != null) {
+        let httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                let jsonObject = JSON.parse(this.responseText);
+                let txt = "";
+                for(x in jsonObject.Cuotas)
+                    txt = txt + "<div class=\"cajaTexto sombreado\">" + "<p class=\"fondoVerde\"><strong>" + jsonObject.Nombre+ "</strong></p> <p class=\"textoPrecio\">" + jsonObject.Precio + "</p> <p class=\"textoIndicativo\">" +
+                        + jsonObject.Texto + "</p> </div>";
+
+            }
+        };
+        httpRequest.open("GET", "cuotas.json", true);
+        httpRequest.send();
+    }
+}
 
 // Introduccion de datos de un fichero XML
 // El fichero XML contiene el personal que trabaja en la empresa
-$(document).ready(function(){
+$(document).ready(function () {
 
 });
 
