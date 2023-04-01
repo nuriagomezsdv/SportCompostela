@@ -1,0 +1,20 @@
+{
+  "Cuotas": [
+    {
+      "Nombre": "CUOTA INDIVIDUAL",
+      "Precio": "35€ /MES",
+      "Texto": "Para mayores de 22 años."
+    },
+    {
+      "Nombre": "CUOTA ESTUDIANTE",
+      "Precio": "22€ /MES",
+      "Texto": "Para menores de 22 años. (Acreditación de estudiante)"
+    },
+    {
+      "Nombre": "CUOTA FAMILIAR",
+      "Precio": "55€ /MES",
+      "Texto": "Hasta 4 miembros de una unidad familiar."
+    }
+  ]
+}
+

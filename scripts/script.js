@@ -267,54 +267,76 @@ function validarTelefono(telefono) {
 // Listener para el boton de enviar del formulario
 // Listener para el evento submit del formulario
 $(document).ready(function () {
-    document.querySelector('form').addEventListener('submit', function (event) {
-        event.preventDefault(); // evita que el formulario se envíe automáticamente
+    let formulario = document.querySelector('form');
+    if (formulario != null) {
+        document.formulario.addEventListener('submit', function (event) {
+            event.preventDefault(); // evita que el formulario se envíe automáticamente
 
-        let nombre = document.getElementsByName("nombre")[0].value;
-        let apellidos = document.getElementsByName("apellidos")[0].value;
-        let email = document.getElementsByName("mail")[0].value;
-        let telefono = document.getElementsByName("telefono")[0].value;
+            let nombre = document.getElementsByName("nombre")[0].value;
+            let apellidos = document.getElementsByName("apellidos")[0].value;
+            let email = document.getElementsByName("mail")[0].value;
+            let telefono = document.getElementsByName("telefono")[0].value;
 
-        if (nombre === "" || email === "" || telefono === "" || apellidos === "") {
-            alert("Hay campos vacios que son necesarios");
-        } else if (!validarEmail(email)) {
-            alert("El email no es correcto.");
-        } else if (!validarTelefono(telefono)) {
-            alert("El número teléfono no es correcto.");
-        } else {
-            alert("Enviado correctamente.\nTe contactaremos lo antes posible!");
-            this.submit(); // envía el formulario
-        }
-    });
+            if (nombre === "" || email === "" || telefono === "" || apellidos === "") {
+                alert("Hay campos vacios que son necesarios");
+            } else if (!validarEmail(email)) {
+                alert("El email no es correcto.");
+            } else if (!validarTelefono(telefono)) {
+                alert("El número teléfono no es correcto.");
+            } else {
+                alert("Enviado correctamente.\nTe contactaremos lo antes posible!");
+                this.submit(); // envía el formulario
+            }
+        });
+    }
 });
 
 // Introduccion de datos de un fichero JSON
 // El fichero JSON contiene las diferentes cuotas del gimnasio
-$(document).ready(cargaCuotas);
-
 function cargaCuotas() {
-    if(document.getElementById("cuotasGimnasio") != null) {
+    let cuotasGimnasio = document.getElementById("cuotasGimnasio");
+    if (cuotasGimnasio != null) {
         let httpRequest = new XMLHttpRequest();
         httpRequest.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
+            if (this.readyState == 4 && this.status == 200) {
                 let jsonObject = JSON.parse(this.responseText);
                 let txt = "";
-                for(x in jsonObject.Cuotas)
-                    txt = txt + "<div class=\"cajaTexto sombreado\">" + "<p class=\"fondoVerde\"><strong>" + jsonObject.Nombre+ "</strong></p> <p class=\"textoPrecio\">" + jsonObject.Precio + "</p> <p class=\"textoIndicativo\">" +
-                        + jsonObject.Texto + "</p> </div>";
-
+                for (x in jsonObject.Cuotas)
+                    txt = txt + "<div class=\"cajaTexto sombreado\">" + "<p class=\"fondoVerde\"><strong>" + jsonObject.Cuotas[x].Nombre + "</strong></p> <p class=\"textoPrecio\">" + jsonObject.Cuotas[x].Precio + "</p> <p class=\"textoIndicativo\">" +
+                        jsonObject.Cuotas[x].Texto + "</p> </div>";
+                cuotasGimnasio.innerHTML = txt;
             }
         };
-        httpRequest.open("GET", "cuotas.json", true);
+        httpRequest.open("GET", "../archivos/cuotas.json", true);
         httpRequest.send();
     }
 }
 
-// Introduccion de datos de un fichero XML
-// El fichero XML contiene el personal que trabaja en la empresa
-$(document).ready(function () {
+$(document).ready(cargaCuotas);
 
-});
+// Introduccion de datos de un fichero XML
+// El fichero XML contiene las actividades que hay en el gimnasio
+
+function cargaActividades() {
+    let listaActividades = document.getElementById("listaActividades");
+    if (listaActividades != null) {
+        let httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                let xmlDoc = this.responseXML;
+                let txt = "";
+                let x = xmlDoc.getElementsByTagName("actividad");
+                for (let i = 0; i < x.length; i++)
+                    txt = txt + "<li><span class=\"colorVerde\"> ✓ </span> " + x[i].childNodes[0].nodeValue + "</li>";
+                listaActividades.innerHTML = txt;
+            }
+        };
+        httpRequest.open("GET", "../archivos/actividades.xml", true);
+        httpRequest.send();
+    }
+}
+
+$(document).ready(cargaActividades);
 
 
 
