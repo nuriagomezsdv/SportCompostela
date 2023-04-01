@@ -293,13 +293,20 @@ $(document).ready(function () {
 
 // Introduccion de datos de un fichero JSON
 // El fichero JSON contiene las diferentes cuotas del gimnasio
-function cargaCuotas() {
+
+function cargaCuotas(){
+    fetch('../archivos/cuotas.json').then(ajaxOK);
+}
+
+function ajaxOK(response){
+    response.json().then(mostrarCuotas);
+}
+function mostrarCuotas(jsonObject) {
     let cuotasGimnasio = document.getElementById("cuotasGimnasio");
     if (cuotasGimnasio != null) {
         let httpRequest = new XMLHttpRequest();
         httpRequest.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                let jsonObject = JSON.parse(this.responseText);
                 let txt = "";
                 for (x in jsonObject.Cuotas)
                     txt = txt + "<div class=\"cajaTexto sombreado\">" + "<p class=\"fondoVerde\"><strong>" + jsonObject.Cuotas[x].Nombre + "</strong></p> <p class=\"textoPrecio\">" + jsonObject.Cuotas[x].Precio + "</p> <p class=\"textoIndicativo\">" +
