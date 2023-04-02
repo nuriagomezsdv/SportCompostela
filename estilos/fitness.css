@@ -56,8 +56,6 @@
 #MenuActividades .cajaImagen{
     display: flex;
     justify-items: flex-start;
-    /*padding-right: 210px;
-    padding-top: 150px;*/
 }
 .textoImagen{
     padding-top: 20px;
@@ -73,6 +71,10 @@
 
 .alturaMinima{
     min-height: 800px;
+}
+
+#instalaciones .cajaImagen{
+    padding-top: 10px;
 }
 
 #entrenamientoPersonalizado .cajaTexto{

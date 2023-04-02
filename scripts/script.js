@@ -269,7 +269,7 @@ function validarTelefono(telefono) {
 $(document).ready(function () {
     let formulario = document.querySelector('form');
     if (formulario != null) {
-        document.formulario.addEventListener('submit', function (event) {
+            formulario.addEventListener('submit', function (event) {
             event.preventDefault(); // evita que el formulario se envíe automáticamente
 
             let nombre = document.getElementsByName("nombre")[0].value;
@@ -309,8 +309,8 @@ function mostrarCuotas(jsonObject) {
             if (this.readyState == 4 && this.status == 200) {
                 let txt = "";
                 for (x in jsonObject.Cuotas)
-                    txt = txt + "<div class=\"cajaTexto sombreado\">" + "<p class=\"fondoVerde\"><strong>" + jsonObject.Cuotas[x].Nombre + "</strong></p> <p class=\"textoPrecio\">" + jsonObject.Cuotas[x].Precio + "</p> <p class=\"textoIndicativo\">" +
-                        jsonObject.Cuotas[x].Texto + "</p> </div>";
+                    txt = txt + "<div class=\"cajaTexto sombreado\">" + "<p class=\"fondoVerde\"><strong>" + jsonObject.Cuotas[x].Nombre + "</strong></p> <p class=\"textoPrecio\">" +
+                        jsonObject.Cuotas[x].Precio + "</p> <p class=\"textoIndicativo\">" + jsonObject.Cuotas[x].Texto + "</p> </div>";
                 cuotasGimnasio.innerHTML = txt;
             }
         };
