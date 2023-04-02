@@ -269,7 +269,7 @@ function validarTelefono(telefono) {
 $(document).ready(function () {
     let formulario = document.querySelector('form');
     if (formulario != null) {
-        document.formulario.addEventListener('submit', function (event) {
+            formulario.addEventListener('submit', function (event) {
             event.preventDefault(); // evita que el formulario se envíe automáticamente
 
             let nombre = document.getElementsByName("nombre")[0].value;
