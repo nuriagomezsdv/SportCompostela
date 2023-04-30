@@ -196,6 +196,7 @@ function cambiarMenuSegunTamanho() {
         menuFijo.style.zIndex = "100";
         logoInicio.style.display = "none";
         menuImagen.style.display = "none";
+        textoInicio.style.display = "inline-block";
         textoInicio.style.top = "60%";
 
     } else if (window.innerWidth < 800) {
@@ -212,6 +213,7 @@ function cambiarMenuSegunTamanho() {
         menuImagen.style.display = "flex";
         textoInicio.style.display = "inline-block";
         logoInicio.style.display = "inline-block";
+        textoInicio.style.top = "30%";
     }
 }
 
