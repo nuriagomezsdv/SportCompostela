@@ -91,7 +91,6 @@ function realizarAparcion() {
             }
         }
 
-
     }
 }
 
@@ -120,17 +119,31 @@ function insertarMenu(id) {
     id.style.right = "0px";
     id.style.left = "0px";
     id.style.backgroundColor = "black";
-    id.innerHTML = " <div class=\"menu\">\n" +
-        "        <ul class=\"menuLista\">\n" +
-        "            <li class=\"menuItem\" ><a class=\"refMenu\"  href=\"index.html\"><img src='../Imagenes/Logo-menu.png' alt='Gimnasio SportCompostela'></a> </li>\n" +
-        "            <li class=\"menuItem\" id=\"Fitness\"'><a class=\"refMenu\" href=\"fitness.html\">\n" +
-        "                FITNESS </a></li>\n" +
-        "            <li class=\"menuItem\" id=\"Nutricion\"><a class=\"refMenu\" href=\"nutricion.html\"> NUTRICIÓN </a></li>\n" +
-        "            <li class=\"menuItem\" id=\"Personal\"><a class=\"refMenu\" href=\"personal.html\"> PERSONAL</a></li>\n" +
-        "            <li class=\"menuItem\" id=\"Cuotas\"><a class=\"refMenu\" href=\"cuotas.html\"> CUOTAS</a></li>\n" +
-        "            <li class=\"menuItem\" id=\"Contacto\"><a class=\"refMenu\" href=\"contacto.html\"> CONTACTO</a></li>\n" +
-        "        </ul>\n" +
-        "    </div>";
+    if(document.title === "SportCompostela") {
+        id.innerHTML = " <div class=\"menu\">\n" +
+            "        <ul class=\"menuLista\">\n" +
+            "            <li class=\"menuItem\" ><a class=\"refMenu\"  href=\"index.html\"><img src='Imagenes/Logo-menu.png' alt='Gimnasio SportCompostela'></a> </li>\n" +
+            "            <li class=\"menuItem\" id=\"Fitness\"'><a class=\"refMenu\" href=\"html/fitness.html\">\n" +
+            "                FITNESS </a></li>\n" +
+            "            <li class=\"menuItem\" id=\"Nutricion\"><a class=\"refMenu\" href=\"html/nutricion.html\"> NUTRICIÓN </a></li>\n" +
+            "            <li class=\"menuItem\" id=\"Personal\"><a class=\"refMenu\" href=\"html/personal.html\"> PERSONAL</a></li>\n" +
+            "            <li class=\"menuItem\" id=\"Cuotas\"><a class=\"refMenu\" href=\"html/cuotas.html\"> CUOTAS</a></li>\n" +
+            "            <li class=\"menuItem\" id=\"Contacto\"><a class=\"refMenu\" href=\"html/contacto.html\"> CONTACTO</a></li>\n" +
+            "        </ul>\n" +
+            "    </div>";
+    } else {
+        id.innerHTML = " <div class=\"menu\">\n" +
+            "        <ul class=\"menuLista\">\n" +
+            "            <li class=\"menuItem\" ><a class=\"refMenu\"  href=\"../index.html\"><img src='../Imagenes/Logo-menu.png' alt='Gimnasio SportCompostela'></a> </li>\n" +
+            "            <li class=\"menuItem\" id=\"Fitness\"'><a class=\"refMenu\" href=\"fitness.html\">\n" +
+            "                FITNESS </a></li>\n" +
+            "            <li class=\"menuItem\" id=\"Nutricion\"><a class=\"refMenu\" href=\"nutricion.html\"> NUTRICIÓN </a></li>\n" +
+            "            <li class=\"menuItem\" id=\"Personal\"><a class=\"refMenu\" href=\"personal.html\"> PERSONAL</a></li>\n" +
+            "            <li class=\"menuItem\" id=\"Cuotas\"><a class=\"refMenu\" href=\"cuotas.html\"> CUOTAS</a></li>\n" +
+            "            <li class=\"menuItem\" id=\"Contacto\"><a class=\"refMenu\" href=\"contacto.html\"> CONTACTO</a></li>\n" +
+            "        </ul>\n" +
+            "    </div>";
+    }
 }
 
 
